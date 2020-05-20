@@ -7,6 +7,17 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
+body, html {
+  margin: 0;
+  color: #303030;
+}
+
+body {
+  background: url('./SVG/GradientBG.svg') no-repeat;
+  background-size: cover; 
+  height: 95%;
+}
+
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;

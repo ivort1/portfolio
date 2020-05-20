@@ -1,15 +1,21 @@
 import React from 'react';
-import './App.css';
 
 // Components
-import NavBar from './components/Navbar/NavigationBar';
-import Main from './components/Main/Main';
+import NavBar from './components/NavBar/NavBar';
+import AboutMe from './components/About Me/AboutMe';
+import SocialMedia from './components/Social Media/SocialMedia';
+import Projects from './components/Projects/Projects';
+
+// CSS
+import './App.css';
 
 function App() {
   return (
-    <div>
+    <div class='parent'>
       <NavBar />
-      <Main />
+      <AboutMe />
+      <SocialMedia />
+      <Projects />
     </div>
   );
 }
