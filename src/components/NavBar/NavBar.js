@@ -9,15 +9,13 @@ import './NavBar.css';
 
 const NavBar = () => {
     return (
-        <div>
-          <nav>
-              <label class="switch">
-                <input type="checkbox" />
-                <span class="slider round"></span>
-              </label>
+        <div className='flex'>
+          <label class="switch">
+            <input type="checkbox" />
+            <span class="slider round"></span>
+          </label>
 
-              <img id='sunAndMoon' src={SunAndMoon} alt='SunAndMoon' /> 
-          </nav>
+          <img id='sunAndMoon' src={SunAndMoon} alt='SunAndMoon' /> 
         </div>
     )
 }

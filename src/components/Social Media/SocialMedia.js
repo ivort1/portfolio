@@ -13,7 +13,7 @@ import pdf from './pdfExample.pdf';
 
 const SocialMedia = () => {
     return (
-        <div>
+        <div class='float'>
             <a href='https://github.com/IvunOrtiz' target='_blank' rel='noopener noreferrer'>
                     <img class='zoomEffect' src={Github} alt='Github' />
             </a>

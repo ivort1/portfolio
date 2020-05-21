@@ -5,18 +5,35 @@ import NavBar from './components/NavBar/NavBar';
 import AboutMe from './components/About Me/AboutMe';
 import SocialMedia from './components/Social Media/SocialMedia';
 import Projects from './components/Projects/Projects';
+import Footer from './components/Footer/Footer';
 
 // CSS
 import './App.css';
 
 function App() {
   return (
-    <div class='parent'>
-      <NavBar />
-      <AboutMe />
-      <SocialMedia />
-      <Projects />
-    </div>
+    <main>
+
+      <header className='navbar'>
+        <NavBar />
+      </header>
+
+      <div className='row float'>
+        <section className='aboutMe'>
+          <AboutMe />
+          <SocialMedia />
+        </section>
+  
+        <section className='projects'>
+          <Projects />
+        </section>
+      </div>
+
+      <footer className='footer'>
+        <Footer />
+      </footer>
+      
+    </main>
   );
 }
 
