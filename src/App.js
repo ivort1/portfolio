@@ -2,7 +2,7 @@ import React from 'react';
 
 // Components
 import NavBar from './components/NavBar/NavBar';
-import AboutMe from './components/About Me/AboutMe';
+import AboutMe from './components/AboutMe/AboutMe';
 import SocialMedia from './components/Social Media/SocialMedia';
 import Projects from './components/Projects/Projects';
 import Footer from './components/Footer/Footer';
@@ -18,7 +18,7 @@ function App() {
         <NavBar />
       </header>
 
-      <div className='row float'>
+      <div className='row'>
         <section className='aboutMe'>
           <AboutMe />
           <SocialMedia />

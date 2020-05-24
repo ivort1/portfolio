@@ -4,26 +4,12 @@
 
 /* Style the body */
 body {
-	font-family: Arial;
 	margin: 0;
-	background: url('./SVG/GradientBG.svg') no-repeat;
+	background: url('./SVG/GradientBG3.svg') no-repeat;
 	background-size: cover; 
+	color: #404040;
+	background-color: #fdfdfd;
 }
-
-.float {
-	position: relative;
-	  animation-name: float;
-	  animation-duration: 2s;
-	  animation-iteration-count: infinite;
-	}
-	
-	@keyframes float {
-		0%   {left: 0px; top: 0px;}
-		/* 25%  {left: 0px; top: 3px;} */
-		50%  {left: 0px; top: 3px;}
-		/* 75%  {left: 0px; top: 1px;} */
-		100% {right: 0px; top: 0px;} 
-	  }
 
 /* Style the top navigation bar */
 .navbar {

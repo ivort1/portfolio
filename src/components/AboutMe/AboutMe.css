@@ -1,0 +1,31 @@
+@font-face {
+	font-family: 'LEMONMILK-Regular';
+	src: local('LEMONMILK-Regular'), url(../../fonts/lemon_milk/LEMONMILK-Regular.otf) format('opentype');
+}
+
+@font-face {
+	font-family: 'Roboto-Light';
+	src: local('Roboto-Light'), url(../../fonts/roboto/Roboto-Light.ttf) format('truetype');
+}
+
+#ivan {
+	font-family: LEMONMILK-Regular;
+	font-size: 80px;
+	margin-bottom: -0.2em;
+}
+
+#aboutMe {
+	font-family: Roboto-Light;
+	font-size: 20px;
+}
+
+
+@media screen and (max-width: 376px) {
+	.break {
+		display: none;
+	}
+
+	#aboutMe {
+		font-size: 20px;;
+	}
+}
