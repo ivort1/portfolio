@@ -14,7 +14,8 @@ import './Projects.css';
 // Media
 import computer from './SVG/computer.svg';
 import github from './SVG/github-purple.svg';
-import code from './Media/code.jpg';
+// import code from './Media/code.jpg';
+import portfolio from './Media/portfolioScreenshot.PNG';
 
 const useStyles = makeStyles({
   root: {
@@ -32,7 +33,7 @@ export default function ImgMediaCard() {
                     component="img"
                     alt="Ivan's Portfolio"
                     height="140"
-                    image={code}
+                    image={portfolio}
                     title="Project"
                 />
                 <CardContent>

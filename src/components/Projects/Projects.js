@@ -6,9 +6,8 @@ import './Projects.css'
 
 const Projects = () => {
     return (
-        <div>
+        <div className='projectsFlex'>
             <h1 id='projects'>Projects</h1>
-
             <ProjectCard />
         </div>
     );

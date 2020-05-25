@@ -3,7 +3,6 @@ import React from 'react';
 // Components
 import NavBar from './components/NavBar/NavBar';
 import AboutMe from './components/AboutMe/AboutMe';
-import SocialMedia from './components/Social Media/SocialMedia';
 import Projects from './components/Projects/Projects';
 import Footer from './components/Footer/Footer';
 
@@ -12,28 +11,21 @@ import './App.css';
 
 function App() {
   return (
-    <main>
+    <div>
+      <NavBar />
 
-      <header className='navbar'>
-        <NavBar />
-      </header>
-
-      <div className='row'>
-        <section className='aboutMe'>
+      <div className='container'>
+        <div className='containerAboutMeFlex'>
           <AboutMe />
-          <SocialMedia />
-        </section>
-  
-        <section className='projects'>
+        </div>
+        
+        <div className='containerProjectFlex'>
           <Projects />
-        </section>
+        </div>
       </div>
-
-      <footer className='footer'>
-        <Footer />
-      </footer>
       
-    </main>
+      <Footer />
+    </div>
   );
 }
 

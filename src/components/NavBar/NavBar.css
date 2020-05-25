@@ -1,6 +1,13 @@
-.flex {
+.navbarFlex {
 	display: flex;
 	align-items: center;
+	justify-content: flex-end;
+	margin: 0;
+
+	height: 3em;
+	/* height: 4.75vh; */
+
+	/* background-color: green; */
 }
 
 #sunAndMoon {
@@ -74,8 +81,5 @@ input:checked + .slider:before {
 }
 
 @media screen and (max-width: 700px) {
-	.flex {  
-		flex-direction: row;
-		justify-content: center;
-	}
+	
 }
