@@ -1,0 +1,12 @@
+.footerFlex {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+
+	height: 3em;
+
+    color: black;
+    /* background-color: blue; */
+}

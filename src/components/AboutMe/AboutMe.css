@@ -8,24 +8,68 @@
 	src: local('Roboto-Light'), url(../../fonts/roboto/Roboto-Light.ttf) format('truetype');
 }
 
+.aboutMeFlex {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	margin: 0;
+	height: 100%;
+	
+	/* background-color: red; */
+}
+
 #ivan {
 	font-family: LEMONMILK-Regular;
-	font-size: 80px;
+	font-size: 500%;
+	margin: 0;
 	margin-bottom: -0.2em;
 }
 
 #aboutMe {
 	font-family: Roboto-Light;
-	font-size: 20px;
+	font-size: 150%;
 }
 
+@media (max-width:481px) {
 
-@media screen and (max-width: 376px) {
-	.break {
-		display: none;
+	.aboutMeFlex {
+		padding-right: 10px;
+		padding-left: 10px;
+		text-align: center;
+	}
+
+	#ivan {
+		font-size: 400%;
 	}
 
 	#aboutMe {
-		font-size: 20px;;
+		font-size: 125%;
 	}
 }
+
+@media (max-width: 501px) {
+	.break {
+		display: none;
+	}
+}
+
+@media (min-width:482px) { 
+	.aboutMeFlex {
+		padding-right: 10px;
+		padding-left: 10px;
+		text-align: center;
+	}
+}
+/* 
+tablet, landscape iPad, lo-res laptops ands desktops 
+@media (min-width:961px) {
+}
+
+big landscape tablets, laptops, and desktops 
+@media (min-width:1025px) {
+}
+
+hi-res laptops and desktops 
+@media (min-width:1281px) {
+} */
