@@ -45,18 +45,18 @@ export default function ImgMediaCard(props) {
                     </Typography>
                 </CardContent>
             </CardActionArea>
-            <div class='labels'>
-                {
+            <div className='labels'>
+                {/* {
                     props.techStackArray.forEach( function(x) { 
                         return <span className='label'>{x}</span>
                     })
-                }
+                } */}
                 
-                {/* <span className='label'>{props.tech}</span> 
+                <span className='label'>ReactJS</span> 
                 <span className='label'>Material-UI</span>
                 <span className='label'>HTML5</span>
                 <span className='label'>CSS3</span> 
-                <span className='label'>JavaScript</span>  */}
+                <span className='label'>JavaScript</span> 
             </div>
             <CardActions>
                 <Button size="small" color="primary" href="https://github.com/IvunOrtiz/portfolio" target="_blank">

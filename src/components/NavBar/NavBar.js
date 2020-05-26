@@ -10,9 +10,9 @@ import './NavBar.css';
 const NavBar = () => {
     return (
         <div className='navbarFlex'>
-          <label class="switch">
+          <label className="switch">
             <input type="checkbox" />
-            <span class="slider round"></span>
+            <span className="slider round"></span>
           </label>
 
           <img id='sunAndMoon' src={SunAndMoon} alt='SunAndMoon' /> 
