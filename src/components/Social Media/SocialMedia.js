@@ -15,19 +15,19 @@ const SocialMedia = () => {
     return (
         <div className='socialMediaFlex'>
             <a className='float' href='https://github.com/IvunOrtiz' target='_blank' rel='noopener noreferrer'>
-                <img class='zoomEffect' src={Github} alt='Github' />
+                <img className='zoomEffect' src={Github} alt='Github' />
             </a>
 
             <a className='float' href='https://www.linkedin.com/in/ivanortiz93' target='_blank' rel='noopener noreferrer'>
-                <img class='zoomEffect' src={LinkedIn} alt='LinkedIn' />
+                <img className='zoomEffect' src={LinkedIn} alt='LinkedIn' />
             </a>
 
             <a className='float' href={pdf} target='_blank' rel='noopener noreferrer' download>
-                <img class='zoomEffect' src={Resume} alt='Resume' />
+                <img className='zoomEffect' src={Resume} alt='Resume' />
             </a>
 
             <a className='float' href='mailto:ortiz.ivan93@gmail.com' target='_blank' rel='noopener noreferrer'>
-                <img class='zoomEffect' src={Email} alt='Email' />
+                <img className='zoomEffect' src={Email} alt='Email' />
             </a>
         </div>
     )
