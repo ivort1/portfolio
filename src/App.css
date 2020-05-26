@@ -6,7 +6,7 @@ body {
 	background-color: #fdfdfd;
 
 	font-size: 100%;
-	/* background-color: pink; */
+	/* background-color: lightgreen; */
 }
 
 .container {
@@ -14,8 +14,8 @@ body {
 	flex-direction: row;
 	justify-content: space-evenly;
 
-	/* height: 90.5vh; */
-	height: 56.9em;
+	height: 90.1vh;
+	/* height: 56.9em; */
 	/* background-color: gray; */
 }
 
