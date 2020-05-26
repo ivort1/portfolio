@@ -26,37 +26,31 @@ const useStyles = makeStyles({
 export default function ImgMediaCard(props) {
     const classes = useStyles();
 
+    const labelArray = props.value.labels.map(value => 
+        <span className='label'>{value}</span>
+    );
+    
     return (
         <Card className={classes.root}>
             <CardActionArea>
                 <CardMedia
                     component="img"
-                    alt={props.imageAlt}
+                    alt={props.value.imageAlt}
                     height="140"
-                    image={props.image}
-                    title={props.imageTitle}
+                    image={props.value.image}
+                    title={props.value.imageTitle}
                 />
                 <CardContent>
                     <Typography gutterBottom variant="h5" component="h2">
-                        <span id='projectTitle'>{props.projectTitle}</span>
+                        <span id='projectTitle'>{props.value.projectTitle}</span>
                     </Typography>
                     <Typography component="p">
-                        <span id='projectDescription'>{props.projectDescription}</span>
+                        <span id='projectDescription'>{props.value.projectDescription}</span>
                     </Typography>
                 </CardContent>
-            </CardActionArea>
+            </CardActionArea> 
             <div className='labels'>
-                {/* {
-                    props.techStackArray.forEach( function(x) { 
-                        return <span className='label'>{x}</span>
-                    })
-                } */}
-                
-                <span className='label'>ReactJS</span> 
-                <span className='label'>Material-UI</span>
-                <span className='label'>HTML5</span>
-                <span className='label'>CSS3</span> 
-                <span className='label'>JavaScript</span> 
+                {labelArray}
             </div>
             <CardActions>
                 <Button size="small" color="primary" href="https://github.com/IvunOrtiz/portfolio" target="_blank">
