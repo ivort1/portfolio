@@ -15,7 +15,6 @@ import './Projects.css';
 import computer from './SVG/computer.svg';
 import github from './SVG/github-purple.svg';
 // import code from './Media/code.jpg';
-import portfolio from './Media/portfolioScreenshot.PNG';
 
 const useStyles = makeStyles({
   root: {
@@ -23,7 +22,8 @@ const useStyles = makeStyles({
   },
 });
 
-export default function ImgMediaCard() {
+
+export default function ImgMediaCard(props) {
     const classes = useStyles();
 
     return (
@@ -31,26 +31,32 @@ export default function ImgMediaCard() {
             <CardActionArea>
                 <CardMedia
                     component="img"
-                    alt="Ivan's Portfolio"
+                    alt={props.imageAlt}
                     height="140"
-                    image={portfolio}
-                    title="Project"
+                    image={props.image}
+                    title={props.imageTitle}
                 />
                 <CardContent>
                     <Typography gutterBottom variant="h5" component="h2">
-                        <span id='projectTitle'>Portfolio</span>
+                        <span id='projectTitle'>{props.projectTitle}</span>
                     </Typography>
                     <Typography component="p">
-                        <span id='projectDescription'>The site you're currently on! It was built from scratch without the use of a template. </span>
+                        <span id='projectDescription'>{props.projectDescription}</span>
                     </Typography>
                 </CardContent>
             </CardActionArea>
             <div class='labels'>
-                <span className='label'>ReactJS</span>
+                {
+                    props.techStackArray.forEach( function(x) { 
+                        return <span className='label'>{x}</span>
+                    })
+                }
+                
+                {/* <span className='label'>{props.tech}</span> 
                 <span className='label'>Material-UI</span>
                 <span className='label'>HTML5</span>
                 <span className='label'>CSS3</span> 
-                <span className='label'>JavaScript</span> 
+                <span className='label'>JavaScript</span>  */}
             </div>
             <CardActions>
                 <Button size="small" color="primary" href="https://github.com/IvunOrtiz/portfolio" target="_blank">
