@@ -12,8 +12,8 @@ import Typography from '@material-ui/core/Typography';
 import './Projects.css';
 
 // Media
-import computer from './SVG/computer.svg';
-import github from './SVG/github-purple.svg';
+import computer from './SVG/computer_purple.svg';
+import github from './SVG/github_purple.svg';
 // import code from './Media/code.jpg';
 
 const useStyles = makeStyles({
@@ -31,7 +31,7 @@ export default function ImgMediaCard(props) {
     );
     
     return (
-        <Card className={classes.root} id='roundedCorners'>
+        <Card className={classes.root} id='card'>
             <CardActionArea>
                 <CardMedia
                     component="img"

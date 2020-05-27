@@ -24,8 +24,9 @@
 	/* background-color: orange; */
 }
 
-.card {
+#card {
 	border-radius: 15px;
+	background-color: #404040;
 }
 
 #projects {
@@ -35,12 +36,12 @@
 
 #projectTitle {
 	font-family: Roboto-Regular;
-	color: #404040;
+	color: #fdfdfd;
 }
 
 #projectDescription {
 	font-family: Roboto-Light;
-	color: #404040;
+	color: #fdfdfd;
 }
 
 .labels {
@@ -50,12 +51,12 @@
 
 .label {
 	font-family: Roboto-Regular;
-	color: rgb(138, 158, 194);
+	color: #f9751d;
 	
 	border-radius: 10px;
 	border-style: solid;
 	border-width: 1.5px;
-	border-color: rgb(138, 158, 194);
+	border-color: #f9751d;
 
 	padding: 7px;
 	margin-top: 5px;
@@ -66,6 +67,10 @@
 	width: 20px;
 	height: 20px;
 	margin-right: 5px;
+}
+
+.MuiButton-label {
+	color: #fdfdfd;
 }
 
 @media screen and (max-width: 414px) {

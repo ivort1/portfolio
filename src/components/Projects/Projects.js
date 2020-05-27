@@ -4,7 +4,8 @@ import ProjectCard from './ProjectCard';
 import Carousel from 'react-material-ui-carousel';
 
 // CSS
-import './Projects.css'
+// import './Projects.css'
+import './Projects_DarkMode.css'
 
 // Media
 import portfolio from './Media/portfolioScreenshot.PNG';

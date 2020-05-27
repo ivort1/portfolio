@@ -5,7 +5,8 @@ import React from 'react';
 import SunAndMoon from './SVG/sunAndMoon.svg';
 
 // CSS
-import './NavBar.css';
+// import './NavBar.css';
+import './NavBar_DarkMode.css';
 
 const NavBar = () => {
     return (
