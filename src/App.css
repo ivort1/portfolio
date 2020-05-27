@@ -15,7 +15,6 @@ body {
 	justify-content: space-evenly;
 
 	height: 90.1vh;
-	/* height: 56.9em; */
 	/* background-color: gray; */
 }
 
@@ -28,22 +27,28 @@ body {
 }
 
 
-/* Responsive layout - when the screen is less than 700px wide, make the two columns stack on top of each other instead of next to each other */
+
 @media screen and (max-width: 1025px) {
 	body {
-		background: url('./SVG/BG-Vertical.svg') no-repeat;
+		background: url('./SVG/GradientBG - Vertical.svg') no-repeat;
 		background-size: cover; 
 	}
 
 	.container {
 		flex-direction: column;
-		height: 79.4em;
+		height: 100.1vh;
 	}
 }
 
-@media (min-width:320px) { /* smartphones, iPhone, portrait 480x320 phones */ }
-@media (min-width:481px) { /* portrait e-readers (Nook/Kindle), smaller tablets @ 600 or @ 640 wide. */ }
-@media (min-width:641px) { /* portrait tablets, portrait iPad, landscape e-readers, landscape 800x480 or 854x480 phones */ }
-@media (min-width:961px) { /* tablet, landscape iPad, lo-res laptops ands desktops */ }
-@media (min-width:1025px) { /* big landscape tablets, laptops, and desktops */ }
-@media (min-width:1281px) { /* hi-res laptops and desktops */ }
+@media screen and (max-width: 500px) { 
+		.container {
+			height: 180vh;
+		}
+}
+
+
+@media screen and (max-width: 330px) { 
+	.container {
+		height: 190vh;
+	}
+}

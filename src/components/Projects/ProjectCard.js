@@ -15,7 +15,6 @@ import './Projects.css';
 import computer from './SVG/computer.svg';
 import github from './SVG/github-purple.svg';
 // import code from './Media/code.jpg';
-import portfolio from './Media/portfolioScreenshot.PNG';
 
 const useStyles = makeStyles({
   root: {
@@ -23,41 +22,43 @@ const useStyles = makeStyles({
   },
 });
 
-export default function ImgMediaCard() {
+
+export default function ImgMediaCard(props) {
     const classes = useStyles();
 
+    const labelArray = props.value.labels.map(value => 
+        <span className='label'>{value}</span>
+    );
+    
     return (
-        <Card className={classes.root}>
+        <Card className={classes.root} id='roundedCorners'>
             <CardActionArea>
                 <CardMedia
                     component="img"
-                    alt="Ivan's Portfolio"
+                    alt={props.value.imageAlt}
                     height="140"
-                    image={portfolio}
-                    title="Project"
+                    image={props.value.image}
+                    title={props.value.imageTitle}
                 />
                 <CardContent>
                     <Typography gutterBottom variant="h5" component="h2">
-                        <span id='projectTitle'>Portfolio</span>
+                        <span id='projectTitle'>{props.value.projectTitle}</span>
                     </Typography>
                     <Typography component="p">
-                        <span id='projectDescription'>The site you're currently on! It was built from scratch without the use of a template. </span>
+                        <span id='projectDescription'>{props.value.projectDescription}</span>
                     </Typography>
                 </CardContent>
-            </CardActionArea>
-            <div class='labels'>
-                <span className='label'>ReactJS</span>
-                <span className='label'>Material-UI</span>
-                <span className='label'>HTML5</span>
-                <span className='label'>CSS3</span> 
-                <span className='label'>JavaScript</span> 
+            </CardActionArea> 
+            <div className='labels'>
+                {labelArray}
             </div>
             <CardActions>
-                <Button size="small" color="primary" href="https://github.com/IvunOrtiz/portfolio" target="_blank">
+                <Button size="small" color="primary" href={props.value.viewDemoLink} target="_blank">
                     <img className='svgIcons' src={computer} alt='computer'/> View Demo
                 </Button>
-                <Button size="small" color="primary" href="https://github.com/IvunOrtiz/portfolio" target="_blank">
+                <Button size="small" color="primary" href={props.value.viewCodeLink} target="_blank">
                     <img className='svgIcons' src={github} alt='github icon'/> View Code
+                    
                 </Button>
             </CardActions>
         </Card>

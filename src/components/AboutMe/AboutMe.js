@@ -9,7 +9,7 @@ const AboutMe = () => {
   return(
     <div className='aboutMeFlex'>
       <h1 id='ivan'>IVAN ORTIZ</h1>
-      <p id="aboutMe">My name is Ivan and I'm a software developer <br class="break"></br>from Los Angeles, California 🕶️☀️🌴</p>
+      <p id="aboutMe">My name is Ivan and I'm a software developer <br className="break"></br>from Los Angeles, California 🕶️☀️🌴</p>
       <SocialMedia />
     </div>
   );
