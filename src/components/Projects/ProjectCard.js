@@ -31,7 +31,7 @@ export default function ImgMediaCard(props) {
     );
     
     return (
-        <Card className={classes.root}>
+        <Card className={classes.root} id='roundedCorners'>
             <CardActionArea>
                 <CardMedia
                     component="img"
@@ -53,11 +53,12 @@ export default function ImgMediaCard(props) {
                 {labelArray}
             </div>
             <CardActions>
-                <Button size="small" color="primary" href="https://github.com/IvunOrtiz/portfolio" target="_blank">
+                <Button size="small" color="primary" href={props.value.viewDemoLink} target="_blank">
                     <img className='svgIcons' src={computer} alt='computer'/> View Demo
                 </Button>
-                <Button size="small" color="primary" href="https://github.com/IvunOrtiz/portfolio" target="_blank">
+                <Button size="small" color="primary" href={props.value.viewCodeLink} target="_blank">
                     <img className='svgIcons' src={github} alt='github icon'/> View Code
+                    
                 </Button>
             </CardActions>
         </Card>
