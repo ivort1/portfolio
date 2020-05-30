@@ -1,6 +1,5 @@
 import React from 'react';
 import ProjectCard from './ProjectCard';
-
 import Carousel from 'react-material-ui-carousel';
 
 // CSS
