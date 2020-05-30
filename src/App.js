@@ -9,7 +9,7 @@ import Footer from './components/Footer/Footer';
 // CSS
 import './App.css';
 
-function App() {
+const App = () => {
   return (
     <div>
       <NavBar />
@@ -27,6 +27,5 @@ function App() {
       <Footer />
     </div>
   );
-}
-
+} 
 export default App;

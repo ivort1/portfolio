@@ -1,14 +1,100 @@
-body {
-	margin: 0;
-	background: url('./SVG/BG.svg') no-repeat;
-	background-size: cover; 
-	color: #404040;
-	background-color: #fdfdfd;
+/* <----- Light & Dark Mode Begin ----->*/
+:root {
+	--background: url('./SVG/Background_LightMode.svg') no-repeat;
+	--vertical-background: url('./SVG/Background_LightMode_Vertical.svg') no-repeat;
+	--background-color: #fdfdfd;
+	--font-color:#404040;
+	--transition-duration: .5s;
+	--toggle-color: #404040;
 
-	font-size: 100%;
-	/* background-color: lightgreen; */
+	/*Label color*/
+	--label-color: rgb(138, 158, 194);
+
+	/*Button color*/
+	--button-color: #3f51b5;
+
 }
 
+[data-theme="dark"] {
+	--background: url('./SVG/Background_DarkMode.svg') no-repeat;
+	--vertical-background: url('./SVG/Background_DarkMode_Vertical.svg') no-repeat;
+	--background-color: #303030;
+	--font-color: #fdfdfd;
+	--toggle-color: #fdfdfd;
+
+	/*Label color*/
+	--label-color: #50e8ca;
+
+	/*Button color*/
+	--button-color: #fdfdfd;
+}
+
+body {
+	background: var(--background);
+	background-color: var(--background-color);
+	color: var(--font-color);
+	-webkit-transition: background var(--transition-duration) ease-in-out;
+ 	transition: background var(--transition-duration) ease-in-out;
+	
+    background-size: cover;
+	margin: 0;
+	font-size: 100%;
+}
+
+/*<----- NavBar SVG Icon -----> */
+.toggleButton {
+	color: var(--toggle-color);
+	-webkit-transition: background var(--transition-duration) ease-in-out;
+ 	transition: background var(--transition-duration) ease-in-out;
+}
+
+/* <----- Projects.js ----->*/
+#card {
+	background-color: var(--background-color);
+	-webkit-transition: background var(--transition-duration) ease-in-out;
+ 	transition: background var(--transition-duration) ease-in-out;
+}
+
+#projects {
+	color: var(--font-color);
+	-webkit-transition: background var(--transition-duration) ease-in-out;
+ 	transition: background var(--transition-duration) ease-in-out;
+}
+
+#projectTitle {
+	color: var(--font-color);
+	-webkit-transition: background var(--transition-duration) ease-in-out;
+ 	transition: background var(--transition-duration) ease-in-out;
+}
+
+#projectDescription {
+	color: var(--font-color);
+	-webkit-transition: background var(--transition-duration) ease-in-out;
+ 	transition: background var(--transition-duration) ease-in-out;
+}
+
+.label {
+    color: var(--label-color);
+	border-color: var(--label-color);
+	-webkit-transition: background var(--transition-duration) ease-in-out;
+ 	transition: background var(--transition-duration) ease-in-out;
+}
+
+.MuiButton-label {
+	color: var(--button-color);
+	-webkit-transition: background var(--transition-duration) ease-in-out;
+ 	transition: background var(--transition-duration) ease-in-out;
+}
+
+.svgIcons {
+	color: var(--button-color);
+	-webkit-transition: background var(--transition-duration) ease-in-out;
+ 	transition: background var(--transition-duration) ease-in-out;
+}
+/* <----- Light & Dark Mode End ----->*/
+
+
+/* <----- Global CSS ----->*/
 .container {
 	display: flex;
 	flex-direction: row;
@@ -26,14 +112,16 @@ body {
 	flex-basis: 50%;
 }
 
-
-
+/*<----- Media queries -----> */
 @media screen and (max-width: 1025px) {
 	body {
-		background: url('./SVG/GradientBG - Vertical.svg') no-repeat;
-		background-size: cover; 
+        background: var(--vertical-background);
+		background-color: var(--background-color);
+		-webkit-transition: background var(--transition-duration) ease-in-out;
+ 		transition: background var(--transition-duration) ease-in-out;
+		background-size: cover;
 	}
-
+	
 	.container {
 		flex-direction: column;
 		height: 100.1vh;
@@ -45,7 +133,6 @@ body {
 			height: 180vh;
 		}
 }
-
 
 @media screen and (max-width: 330px) { 
 	.container {
