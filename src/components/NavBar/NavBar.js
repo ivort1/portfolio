@@ -1,20 +1,17 @@
 
 import React from 'react';
+import ToggleSwitch from './ToggleSwitch';
 
 // Media
-import SunAndMoon from './SVG/sunAndMoon.svg';
+import SunAndMoon from './SVG/sun-black.svg';
 
 // CSS
-// import './NavBar.css';
-import './NavBar_DarkMode.css';
+import './NavBar.css';
 
 const NavBar = () => {
     return (
         <div className='navbarFlex'>
-          <label className="switch">
-            <input type="checkbox" />
-            <span className="slider round"></span>
-          </label>
+          <ToggleSwitch />
 
           <img id='sunAndMoon' src={SunAndMoon} alt='SunAndMoon' /> 
         </div>

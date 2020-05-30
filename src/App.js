@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {Component} from 'react';
 
 // Components
 import NavBar from './components/NavBar/NavBar';
@@ -7,27 +7,34 @@ import Projects from './components/Projects/Projects';
 import Footer from './components/Footer/Footer';
 
 // CSS
-// import './App.css';
-import './App_DarkMode.css';
+import './App.css';
+import './LightMode.css';
 
-function App() {
-  return (
-    <div>
-      <NavBar />
+class App extends Component {
+  constructor() {
+    super();
+    this.state = {
 
-      <div className='container'>
-        <div className='containerAboutMeFlex'>
-          <AboutMe />
+    }
+  }
+  render() {
+    return (
+      <div>
+        <NavBar />
+  
+        <div className='container'>
+          <div className='containerAboutMeFlex'>
+            <AboutMe />
+          </div>
+          
+          <div className='containerProjectFlex'>
+            <Projects />
+          </div>
         </div>
         
-        <div className='containerProjectFlex'>
-          <Projects />
-        </div>
+        <Footer />
       </div>
-      
-      <Footer />
-    </div>
-  );
+    );
+  } 
 }
-
 export default App;

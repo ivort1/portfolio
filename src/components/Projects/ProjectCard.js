@@ -14,6 +14,8 @@ import './Projects.css';
 // Media
 import computer from './SVG/computer_purple.svg';
 import github from './SVG/github_purple.svg';
+// import computer from './SVG/computer_white.svg';
+// import github from './SVG/github_white.svg';
 // import code from './Media/code.jpg';
 
 const useStyles = makeStyles({

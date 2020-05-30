@@ -6,10 +6,10 @@
         fill: url(#linear-gradient);
       }
     </style>
-    <linearGradient id="linear-gradient" x1="511" y1="1515" x2="511" y2="643.063" gradientUnits="userSpaceOnUse">
+    <linearGradient id="linear-gradient" x1="511" y1="1515" x2="511" y2="667.188" gradientUnits="userSpaceOnUse">
       <stop offset="0" stop-color="#8a00ff" stop-opacity="0"/>
       <stop offset="1" stop-color="#81f6ff"/>
     </linearGradient>
   </defs>
-  <path id="Gradient_Fill_1" data-name="Gradient Fill 1" class="cls-1" d="M-15,705s227.828-141.213,488.573,2.787S1037,711,1037,711l-3,804H-6Z"/>
+  <path id="Gradient_Fill_2" data-name="Gradient Fill 2" class="cls-1" d="M-15,705s298.758-87.043,518.543,2.957S1037,711,1037,711l-3,804H-6Z"/>
 </svg>
