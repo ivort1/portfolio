@@ -7,9 +7,9 @@ import './SocialMedia.css';
 // Media 
 import Github from './SVG/github.svg';
 import LinkedIn from './SVG/linkedin.svg';
-import Resume from './SVG/resume.png';
-import Email from './SVG/email.png';
-import pdf from './pdfExample.pdf';
+import Resume from './SVG/resume.svg';
+import Email from './SVG/email.svg';
+import pdf from './Resume_2020.pdf';
 
 const SocialMedia = () => {
     return (
