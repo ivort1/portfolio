@@ -9,7 +9,7 @@ import './Projects.css';
 import portfolio from './Media/portfolioScreenshot.PNG';
 import royaleCalculator from './Media/Royale-Calculator.png';
 
-const Projects = (props) => {
+const Projects = () => {
     
     let projects = [
         {
@@ -19,7 +19,7 @@ const Projects = (props) => {
             projectTitle: "Portfolio",
             projectDescription: "The site you're currently on! It was built from scratch without the use of a template.",
             labels: ['ReactJS', 'Material-UI', 'HTML5', 'CSS3', 'JavaScript'],
-            viewDemoLink: "https://github.com/IvunOrtiz/portfolio",
+            viewDemoLink: "https://ivanortiz.me",
             viewCodeLink: "https://github.com/IvunOrtiz/portfolio"
         },
         {
@@ -29,7 +29,7 @@ const Projects = (props) => {
             projectTitle: 'Royale Calculator',
             projectDescription: "Calculate the number of cards and gold required to finish your next upgrade in Super Cell's Clash Royale.",
             labels: ['ReactJS', 'Material-UI', 'HTML5', 'CSS3', 'JavaScript'],
-            viewDemoLink: "https://github.com/IvunOrtiz/portfolio",
+            viewDemoLink: "https://ivunortiz.github.io/royale-calculator/",
             viewCodeLink: "https://github.com/IvunOrtiz/royale-calculator"
         }
     ]
