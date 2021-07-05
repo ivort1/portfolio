@@ -4,8 +4,6 @@ import { Helmet } from "react-helmet";
 import 'bootstrap/dist/css/bootstrap.css';
 import './main.css';
 
-import resume from '../assets/documents/Resume.pdf';
-
 import Card from '../components/Card';
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
@@ -25,7 +23,7 @@ const IndexPage = () => {
     <main>
       <Helmet>
           <title>Ivan Ortiz | My portfolio</title>
-          <link rel="apple-touch-icon" sizes="180x180" href="../assets/images/icon.png"></link>
+          <link rel="apple-touch-icon" sizes="180x180" href="/icon.png"></link>
           <meta name="apple-mobile-web-app-title" content="Ivan Ortiz"></meta>
           <meta name="application-name" content="Ivan Ortiz"></meta>
       </Helmet>
@@ -37,7 +35,7 @@ const IndexPage = () => {
        
 
         <div class="myButtonsContainer">
-          <a href={resume} download rel='noopener noreferrer' target='_blank'>
+          <a href="/Resume.pdf" download rel='noopener noreferrer' target='_blank'>
             <button type="button" class="btn btn-dark"><i class="bi bi-file-earmark-text-fill"></i>My resume</button>
           </a>
 
