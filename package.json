@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "private": true,
   "description": "portfolio",
-  "author": "ivunortiz",
+  "author": "ivort1",
   "keywords": [
     "gatsby"
   ],
@@ -33,5 +33,9 @@
     "react-dom": "^17.0.1",
     "react-helmet": "^6.1.0",
     "sass": "^1.35.1"
+  },
+  "devDependencies": {
+    "postcss": "^8.3.5",
+    "postcss-loader": "^6.1.1"
   }
 }
