@@ -8,7 +8,6 @@ import Card from '../components/Card';
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faEnvelope } from '@fortawesome/free-regular-svg-icons';
-import { faCopyright } from '@fortawesome/free-regular-svg-icons';
 import { faInstagram, faGithub, faLinkedinIn } from '@fortawesome/free-brands-svg-icons';
 
 const IndexPage = () => {
@@ -17,7 +16,6 @@ const IndexPage = () => {
   const instagram = <FontAwesomeIcon icon={faInstagram} />
   const github = <FontAwesomeIcon icon={faGithub} />
   const linkedIn = <FontAwesomeIcon icon={faLinkedinIn} />
-  const copyright = <FontAwesomeIcon icon={faCopyright} />
   
   return (
     <main>
@@ -33,30 +31,28 @@ const IndexPage = () => {
           <div className="header">Ivan Ortiz</div>
         </div>
        
-
         <div class="myButtonsContainer">
           <a href="/Resume.pdf" download rel='noopener noreferrer' target='_blank'>
-            <button type="button" class="btn btn-dark"><i class="bi bi-file-earmark-text-fill"></i>My resume</button>
+            <button type="button" class="btn btn-outline-dark"><i class="bi bi-file-earmark-text-fill"></i>My resume</button>
           </a>
 
-          <a href="mailto:ortiz.ivan93@gmail.com"><button type="button" class="btn btn-dark">
-            <i class="bi bi-envelope-fill"></i>Email me</button>
+          <a href="mailto:ortiz.ivan93@gmail.com">
+            <button type="button" class="btn btn-outline-dark"><i class="bi bi-envelope-fill"></i>Email me</button>
           </a>
 
           <a href="https://github.com/ivort1" rel='noopener noreferrer' target='_blank'>
-            <button type="button" class="btn btn-dark"><i class="bi bi-github"></i>GitHub</button>
+            <button type="button" class="btn btn-outline-dark"><i class="bi bi-github"></i>GitHub</button>
           </a>
 
           <a href="https://www.linkedin.com/in/ivanortiz93" rel='noopener noreferrer' target='_blank'>
-            <button type="button" class="btn btn-dark"><i class="bi bi-linkedin"></i>LinkedIn</button>
+            <button type="button" class="btn btn-outline-dark"><i class="bi bi-linkedin"></i>LinkedIn</button>
           </a>
         </div>
         
         <div className="aboutMeContainer">
           <div className="header">About me</div>
           <p className="bodyText">
-            Born and raised just outside of Los Angeles, I've also called New York and Philadelphia "home". Sports
-            enthusiast, lover of tacos, pizza, and In-N-Out, recovering Disneyland addict, and huge nerd for all things
+            Sports enthusiast, lover of tacos, pizza, and In-N-Out, recovering Disneyland addict, and huge nerd for all things
             related to tech and software.
           </p>
         </div>
@@ -94,7 +90,7 @@ const IndexPage = () => {
             <span className="fa-lg"><a href="https://www.instagram.com/ivunortiz/" target="_blank" rel="noopener noreferrer">{instagram}</a></span>
             <span className="fa-lg"><a href="https://www.linkedin.com/in/ivanortiz93" target="_blank" rel="noopener noreferrer">{linkedIn}</a></span>
           </div>
-          <span className="copyrightText">{copyright} Ivan Ortiz 2021</span>
+          <span>© Ivan Ortiz 2021</span>
         </footer>
 
       </div>{/* container */}
