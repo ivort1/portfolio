@@ -33,7 +33,7 @@ const IndexPage = () => {
        
         <div class="myButtonsContainer">
           <a href="/Resume.pdf" download rel='noopener noreferrer' target='_blank'>
-            <button type="button" class="btn btn-outline-dark"><i class="bi bi-file-earmark-text-fill"></i>My resume</button>
+            <button type="button" class="btn btn-dark"><i class="bi bi-file-earmark-text-fill"></i>My resume</button>
           </a>
 
           <a href="mailto:ortiz.ivan93@gmail.com">
