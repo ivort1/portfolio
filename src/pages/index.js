@@ -4,6 +4,7 @@ import { Helmet } from "react-helmet";
 import 'bootstrap/dist/css/bootstrap.css';
 import './main.css';
 
+import Button from '../components/Button';
 import Card from '../components/Card';
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
@@ -32,21 +33,29 @@ const IndexPage = () => {
         </div>
        
         <div class="myButtonsContainer">
-          <a href="/Resume.pdf" download rel='noopener noreferrer' target='_blank'>
-            <button type="button" class="btn btn-dark"><i class="bi bi-file-earmark-text-fill"></i>My resume</button>
-          </a>
+          <Button
+            href="/Resume.pdf"
+            buttonIcon="bi-file-earmark-text-fill"
+            buttonType="btn-dark"
+            buttonText="My resume" />
 
-          <a href="mailto:ortiz.ivan93@gmail.com">
-            <button type="button" class="btn btn-outline-dark"><i class="bi bi-envelope-fill"></i>Email me</button>
-          </a>
+          <Button 
+            href="mailto:ortiz.ivan93@gmail.com"
+            buttonIcon="bi-envelope-fill"
+            buttonType="btn-outline-dark"
+            buttonText="Email me" />
 
-          <a href="https://github.com/ivort1" rel='noopener noreferrer' target='_blank'>
-            <button type="button" class="btn btn-outline-dark"><i class="bi bi-github"></i>GitHub</button>
-          </a>
+          <Button
+            href="https://github.com/ivort1"
+            buttonIcon="bi-github"
+            buttonType="btn-outline-dark"
+            buttonText="GitHub" />
 
-          <a href="https://www.linkedin.com/in/ivanortiz93" rel='noopener noreferrer' target='_blank'>
-            <button type="button" class="btn btn-outline-dark"><i class="bi bi-linkedin"></i>LinkedIn</button>
-          </a>
+          <Button
+            href="https://www.linkedin.com/in/ivanortiz93"
+            buttonIcon="bi-linkedin"
+            buttonType="btn-outline-dark"
+            buttonText="LinkedIn" />
         </div>
         
         <div className="aboutMeContainer">
