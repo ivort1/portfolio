@@ -1,12 +1,18 @@
 import * as React from "react"
 import { Helmet } from "react-helmet";
 
+// Bootstrap
 import 'bootstrap/dist/css/bootstrap.css';
+
+// Custom CSS
 import './main.css';
 
+// Components
 import Button from '../components/Button';
 import Card from '../components/Card';
+import Icon from "../components/Icon";
 
+// Font Awesome
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faEnvelope } from '@fortawesome/free-regular-svg-icons';
 import { faInstagram, faGithub, faLinkedinIn } from '@fortawesome/free-brands-svg-icons';
@@ -14,8 +20,8 @@ import { faInstagram, faGithub, faLinkedinIn } from '@fortawesome/free-brands-sv
 const IndexPage = () => {
 
   const envelope = <FontAwesomeIcon icon={faEnvelope} />
-  const instagram = <FontAwesomeIcon icon={faInstagram} />
   const github = <FontAwesomeIcon icon={faGithub} />
+  const instagram = <FontAwesomeIcon icon={faInstagram} />
   const linkedIn = <FontAwesomeIcon icon={faLinkedinIn} />
   
   return (
@@ -71,21 +77,18 @@ const IndexPage = () => {
           <div className="myProjects">
             <Card
               cardTitle="Personal portfolio"
-              cardSubtitle={["Gatsby", "HTML", "CSS", "Sass", "JavaScript", "GitHub", "Netlify", "Google Domains"]}
               cardText="The site you're currently viewing! This website allows me to conveniently display a little bit about me, my contact information, my thoughts, and my projects."
               cardGitHubLink="https://github.com/ivort1/portfolio"
               cardWebsiteLink="https://www.ivanortiz.me" />
 
             <Card
               cardTitle="Destination wedding website"
-              cardSubtitle="Built with HTML, CSS, JavaScript, and Bootstrap, stored on GitHub, and hosted on Netlify with a custom domain."
               cardText="We decided on having a destination wedding and thought that having a website would make it a lot easier for our guests to find all relevant information pertaining to the wedding."
               cardGitHubLink="https://github.com/ivort1/bodaenmexico"
               cardWebsiteLink="https://www.ivanandmarilynn.com" />
 
             <Card
               cardTitle="Royale calculator"
-              cardSubtitle={["React", "HTML", "CSS", "JavaScript", "Material-UI", "GitHub", "Netlify"]}
               cardText="A calculator for the hit mobile game, Clash Royale, that evaluates the quantity of cards and amount of gold that is still required to max out a card to level thirteen."
               cardGitHubLink="https://github.com/ivort1/royale-calculator"
               cardWebsiteLink="https://royalecalculator.netlify.app/" />
@@ -94,10 +97,10 @@ const IndexPage = () => {
 
         <footer>
           <div className="footerIcons">
-            <span className="fa-lg"><a href="mailto: ortiz.ivan93@gmail.com">{envelope}</a></span>
-            <span className="fa-lg"><a href="https://www.github.com/ivort1" target="_blank" rel="noopener noreferrer">{github}</a></span>
-            <span className="fa-lg"><a href="https://www.instagram.com/ivunortiz/" target="_blank" rel="noopener noreferrer">{instagram}</a></span>
-            <span className="fa-lg"><a href="https://www.linkedin.com/in/ivanortiz93" target="_blank" rel="noopener noreferrer">{linkedIn}</a></span>
+            <Icon href="mailto: ortiz.ivan93@gmail.com" icon={envelope} />
+            <Icon href="https://www.github.com/ivort1" icon={github} />
+            <Icon href="https://www.instagram.com/ivunortiz/" icon={instagram} />
+            <Icon href="https://www.linkedin.com/in/ivanortiz93" icon={linkedIn} />
           </div>
           <span>© Ivan Ortiz 2021</span>
         </footer>
