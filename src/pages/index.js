@@ -83,8 +83,8 @@ const IndexPage = () => {
 
             <Card
               cardTitle="Destination wedding website"
-              cardText="We decided on having a destination wedding and thought that having a website would make it a lot easier for our guests to find all relevant information pertaining to the wedding."
-              cardGitHubLink="https://github.com/ivort1/bodaenmexico"
+              cardText="We decided on getting married in Mexico and thought that having a website would make it a lot easier for our guests to find all relevant information pertaining to the wedding."
+              cardGitHubLink="https://github.com/ivort1/ivanandmarilynn"
               cardWebsiteLink="https://www.ivanandmarilynn.com" />
 
             <Card
