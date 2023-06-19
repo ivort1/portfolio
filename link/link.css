@@ -1,0 +1,29 @@
+.button-link {
+    background-color: var(--links-accent);
+    border: solid 1px var(--links-accent);
+    border-radius: 5px;
+    color: var(--primary-text) !important;
+    padding: 0.5rem 2rem;
+    cursor: pointer;
+    transition: ease-in-out 0.25s;
+}
+
+.button-link:hover {
+    background-color: var(--links-darker-accent);
+    border-color: var(--links-darker-accent);
+}
+
+.text-link {
+    transition: ease-in-out 0.25s;
+}
+
+.text-link:hover > .fa-arrow-right {
+    opacity: 100%;
+    transform: rotate(-45deg) translate(10px, 0);
+}
+
+.fa-arrow-right {
+    opacity: 0%;
+    transform: rotate(-45deg);
+    transition: ease-in-out 0.2s;
+}
