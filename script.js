@@ -4,25 +4,29 @@
 NavBar
 
 _______________________________ */
-const btnToggle = document.querySelector(".nav-toggle");
-const mobileMenu = document.querySelector(".nav-links");
-const navLinks = document.querySelectorAll(".nav-links li");
+function toggle() {
+    const nav = document.getElementById("nav"),
+        style = window.getComputedStyle(nav),
+        height = style.getPropertyValue('height'),
+        navToggle = document.getElementById("nav-toggle"),
+        navLinks = document.querySelectorAll(".nav-links li");
 
-btnToggle.addEventListener("click", function() {
-    mobileMenu.classList.toggle("nav-active");
-    // mobileMenu.classList.toggle("hidden");
-
-    navLinks.forEach((link, index) => {
-        if(link.style.animation) {
-            link.style.animation = '';
+        if(height === "64px") {
+            nav.style.height = "20rem";
         } else {
-
-            link.style.animation = `navLinkFade 0.5s ease forwards ${index / 5 + 0.5}s`;
+            nav.style.height = "4rem";
         }
-    });
 
-    btnToggle.classList.toggle("toggle");
-})
+        navToggle.classList.toggle("toggle");
+
+        navLinks.forEach((link, index) => {
+            if(link.style.animation) {
+                link.style.animation = '';
+            } else {
+                link.style.animation = `navLinkFade 0.5s ease forwards ${index / 5 + 0.25}s`;
+            }
+        });
+}
 
 /* ____________________________
 
@@ -57,4 +61,4 @@ const year = date.getFullYear();
 
 const footerCopyrightYear = document.querySelector(".footer--copyright-year");
 
-footerCopyrightYear.insertAdjacentHTML("beforeEnd", `<span>${year}</span>`);
+footerCopyrightYear.insertAdjacentHTML("beforeEnd", `${year}`);
