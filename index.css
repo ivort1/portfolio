@@ -55,14 +55,18 @@ Navigation bar
 _______________________________ */
 nav {
     height: 4rem;
+    left: 0;
     overflow: hidden;
     padding: var(--mobile-padding) var(--mobile-padding) 0 var(--mobile-padding);
-    transition: height ease-in-out 0.5s;
+    position: sticky;
+    top: 0;
+    transition: all ease-in-out 0.25s;
+    z-index: 999;
     
     /* Flexbox */
     display: flex;
     flex-direction: column;
-    align-items: flex-start;
+    align-items: center;
     justify-content: flex-start;
 }
 
@@ -346,17 +350,36 @@ _______________________________ */
 
 /* tablet, landscape iPad, lo-res laptops ands desktops */ 
 @media (min-width:961px) { 
+    nav {
+        padding: 5rem 2.5rem;
+        flex-direction: row;
+    }
 
+    .nav-links {
+        margin: 0;
+        /* width: 50%; */
+
+        /* Flexbox */
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: flex-end;
+        gap: var(--mobile-padding);
+    }
+
+    .nav-links li {
+        opacity: 1;
+    }
+
+    #nav-toggle {
+        display: none;
+    }
 }
 
 /* big landscape tablets, laptops, and desktops */
 @media (min-width:1025px) {
     body {
         font-size: 1.25rem;
-    }
-
-    nav {
-        padding: 5rem 10rem 0 10rem;
     }
 
     .container {
@@ -389,6 +412,11 @@ _______________________________ */
 
 /* hi-res laptops and desktops */
 @media (min-width:1281px) {
+    nav {
+        padding: 5rem 10rem;
+        flex-direction: row;
+    }
+
     .container {
         gap: 10rem;
         padding: 5rem 20rem;
@@ -401,7 +429,7 @@ _______________________________ */
 
 @media (min-width:2000px) {
     nav {
-        padding: 5rem 20rem 0 20rem;
+        padding: 5rem 20rem;
     }
 
     .container {

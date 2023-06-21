@@ -4,6 +4,26 @@
 NavBar
 
 _______________________________ */
+window.onscroll = () => {minimizeNavOnScroll()};
+
+const minimizeNavOnScroll = () => {
+    const nav = document.getElementById("nav"),
+    style = window.getComputedStyle(nav),
+    paddingTop = style.getPropertyValue('padding-top');
+
+  if (document.body.scrollTop > 80 || document.documentElement.scrollTop > 80) {
+      nav.style.backgroundColor = "#1E1E2C";
+
+    if(paddingTop != "40px") {
+        nav.style.paddingTop = "1rem";
+        nav.style.paddingBottom = "1rem";
+    } 
+  } else {
+        nav.removeAttribute("style");
+  }
+} 
+
+
 const toggle = () => {
     const nav = document.getElementById("nav"),
         style = window.getComputedStyle(nav),
