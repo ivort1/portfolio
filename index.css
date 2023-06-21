@@ -154,7 +154,7 @@ _______________________________ */
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
-    align-items: center;
+    align-items: flex-start;
     gap: 5rem;
 }
 
@@ -165,6 +165,8 @@ Landing
 
 _______________________________ */
 .landing {
+    max-width: 60rem;
+
     /* Flexbox */
     display: flex;
     flex-direction: column;
@@ -181,9 +183,9 @@ _______________________________ */
 .landing--links {
     /* Flexbox */
     display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    align-items: flex-start;
+    flex-direction: row;
+    align-items: center;
+    flex-wrap: wrap;
     gap: 2.5rem;
 }
 
@@ -194,25 +196,32 @@ Contact
 
 _______________________________ */
 .contact {
+    width: 100%;
+
     /* Flexbox */
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: flex-start;
     align-items: center;
+    gap: 5rem;
 }
 
 .contact--section {    
     /* Flexbox */
     display: flex;
     flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
 }
 
 #contact--section-left {
     gap: 2.5rem;
+    width: 100%;
 }
 
 #contact--section-right {
     display: none;
+    width: 100%;
 }
 
 .contact--header {
@@ -226,11 +235,16 @@ _______________________________ */
 }
 
 .contact--form-top-margin {
-    margin-top: 2rem;
+    margin-top: 2.5rem;
+}
+
+form > * {
+    box-sizing: border-box;
+    width: 100%;
 }
 
 form > label {
-    font-size: 1rem;
+    font-size: 0.75rem;
 }
 
 form > input {
@@ -289,6 +303,9 @@ footer {
     gap: 3rem;
 }
 
+footer .footer--text {
+    max-width: 30rem;
+}
 
 .footer--contact-links {
     /* Flexbox */
@@ -305,4 +322,93 @@ footer {
 
 .footer--copyright-year-icon {
     font-size: 1rem;
+}
+
+/* ____________________________
+
+
+Media queries
+
+_______________________________ */
+/* smartphones, iPhone, portrait 480x320 phones */ 
+@media (min-width:320px) { 
+
+}
+
+/* portrait e-readers (Nook/Kindle), smaller tablets @ 600 or @ 640 wide. */
+@media (min-width:481px) { 
+
+}
+
+/* portrait tablets, portrait iPad, landscape e-readers, landscape 800x480 or 854x480 phones */
+@media (min-width:641px) {
+}
+
+/* tablet, landscape iPad, lo-res laptops ands desktops */ 
+@media (min-width:961px) { 
+
+}
+
+/* big landscape tablets, laptops, and desktops */
+@media (min-width:1025px) {
+    body {
+        font-size: 1.25rem;
+    }
+
+    nav {
+        padding: 5rem 10rem 0 10rem;
+    }
+
+    .container {
+        padding: 2.5rem 10rem;
+    }
+
+    #landing--header {
+        font-size: 2rem;
+    }
+
+    #contact--section-left {
+        width: 50%;
+    }
+
+    #contact--section-right {
+        display: flex;
+        width: 50%;
+    }
+
+    form > label {
+        font-size: 1rem;
+    }
+
+    footer {
+        font-size: 1rem;
+        height: 30rem;
+        padding: 0 10rem;
+    }
+}
+
+/* hi-res laptops and desktops */
+@media (min-width:1281px) {
+    .container {
+        gap: 10rem;
+        padding: 5rem 20rem;
+    }
+
+    footer {
+        padding: 0 20rem;
+    }
+}
+
+@media (min-width:2000px) {
+    nav {
+        padding: 5rem 20rem 0 20rem;
+    }
+
+    .container {
+        padding: 5rem 40rem;
+    }
+
+    footer {
+        padding: 0 40rem;
+    }
 }

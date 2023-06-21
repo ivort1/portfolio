@@ -4,7 +4,7 @@
 NavBar
 
 _______________________________ */
-function toggle() {
+const toggle = () => {
     const nav = document.getElementById("nav"),
         style = window.getComputedStyle(nav),
         height = style.getPropertyValue('height'),
