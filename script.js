@@ -6,16 +6,18 @@ Dark mode
 _______________________________ */
 const darkModeIcon = document.getElementById("nav--dark-mode-icon");
 let darkModeEnabled = localStorage.getItem("darkModeEnabled");
+localStorage.setItem("hasBeenToggled", "false");
+let hasBeenToggled = localStorage.getItem("hasBeenToggled");
 
 // Check user's system settings to see if they prefer dark mode by default
 const prefersDarkMode = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches;
 
-if (prefersDarkMode) {
+if (prefersDarkMode && hasBeenToggled === "false") {
     document.body.classList.add("dark-mode");
     darkModeIcon.classList.replace("fa-moon", "fa-sun");
-    darkModeEnabled = "true";
+    localStorage.setItem("darkModeEnabled", "true");
 } else {
-    darkModeEnabled = "false";
+    localStorage.setItem("darkModeEnabled", "false");
 }
 
 const toggleDarkMode = () => {
@@ -30,6 +32,7 @@ const toggleDarkMode = () => {
     }
 
     localStorage.setItem("darkModeEnabled", darkModeEnabled);
+    localStorage.setItem("hasBeenToggled", "true");
 }
 
 /* ____________________________
@@ -119,5 +122,4 @@ const date = new Date();
 const year = date.getFullYear();
 
 const footerCopyrightYear = document.querySelector(".footer--copyright-year");
-
-footerCopyrightYear.insertAdjacentHTML("beforeEnd", `${year}`);
+footerCopyrightYear.textContent = (`Ivan Ortiz © ${year}`);
