@@ -1,16 +1,16 @@
 .button-link {
-    background-color: var(--links-accent);
-    border: solid 1px var(--links-accent);
+    background-color: var(--links-accent-one);
+    border: solid 1px var(--links-accent-one);
     border-radius: 5px;
-    color: var(--primary-text) !important;
+    color: var(--text) !important;
     padding: 0.5rem 2rem;
     cursor: pointer;
     transition: ease-in-out 0.25s;
 }
 
 .button-link:hover {
-    background-color: var(--links-darker-accent);
-    border-color: var(--links-darker-accent);
+    background-color: var(--links-accent-two);
+    border-color: var(--links-accent-two);
 }
 
 .text-link {

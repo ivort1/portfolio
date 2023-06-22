@@ -12,7 +12,7 @@
     transform: translateX(-50%);
     border-width: 4px 6px 0 6px;
     border-style: solid;
-    border-color: var(--links-accent) transparent transparent transparent;
+    border-color: var(--links-accent-one) transparent transparent transparent;
     z-index: 100;
 }
 
@@ -22,9 +22,9 @@
     left: 50%;
     top: -6px;
     transform: translateX(-50%) translateY(-100%);
-    background: var(--links-accent);
+    background: var(--links-accent-one);
     text-align: center;
-    color: var(--primary-text);
+    color: var(--text);
     padding: 4px 2px;
     font-size: 0.75rem;
     min-width: 80px;
