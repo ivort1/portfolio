@@ -1,6 +1,43 @@
 /* ____________________________
 
 
+Dark mode
+
+_______________________________ */
+const darkModeIcon = document.getElementById("nav--dark-mode-icon");
+localStorage.setItem("darkModeEnabled", "false");
+let darkModeEnabled = localStorage.getItem("darkModeEnabled");
+
+// Check user's system settings to see if they prefer dark mode by default
+const prefersDarkMode = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches;
+
+if (prefersDarkMode) {
+    document.body.classList.add("dark-mode");
+    localStorage.setItem("darkModeEnabled", "true");
+    darkModeEnabled = "true";
+}
+
+const toggleDarkMode = () => {
+    if(darkModeEnabled === "true") {
+        document.body.classList.remove("dark-mode");
+        localStorage.setItem("darkModeEnabled", "false");
+        darkModeEnabled = "false";
+    } else {
+        document.body.classList.add("dark-mode");
+        localStorage.setItem("darkModeEnabled", "true");
+        darkModeEnabled = "true";
+    }
+
+    if(document.body.classList.contains("dark-mode")) {
+        darkModeIcon.classList.replace("fa-moon", "fa-sun");
+    } else {
+        darkModeIcon.classList.replace("fa-sun", "fa-moon");
+    }
+}
+
+/* ____________________________
+
+
 NavBar
 
 _______________________________ */
@@ -11,16 +48,21 @@ const minimizeNavOnScroll = () => {
     style = window.getComputedStyle(nav),
     paddingTop = style.getPropertyValue('padding-top');
 
-  if (document.body.scrollTop > 80 || document.documentElement.scrollTop > 80) {
-      nav.style.backgroundColor = "#1E1E2C";
+    if (document.body.scrollTop > 80 || document.documentElement.scrollTop > 80) {
 
-    if(paddingTop != "40px") {
-        nav.style.paddingTop = "1rem";
-        nav.style.paddingBottom = "1rem";
-    } 
-  } else {
-        nav.removeAttribute("style");
-  }
+        if(document.body.classList.contains("dark-mode")) {
+            nav.style.backgroundColor = "#1E1E2C";
+        } else {
+            nav.style.backgroundColor = "#FFFFFF";
+        }
+        
+        if(paddingTop != "40px") {
+            nav.style.paddingTop = "1rem";
+            nav.style.paddingBottom = "1rem";
+        } 
+    } else {
+            nav.removeAttribute("style");
+    }
 } 
 
 

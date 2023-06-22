@@ -2,24 +2,51 @@
 @import url("./css/tooltip.css");
 
 :root {
-    --primary: #212131;
-    --background: #1E1E2C;
-    --accent-one: #35354F;
-    --accent-two: #535366;
-    --accent-three: #7E7E91;
-    --primary-text: #F7F7F7;
-    --links-primary: #9FA2FF;
-    --links-accent: #474B7B;
-    --links-darker-accent: #313660;
+    --background: #FAFAFA;
+    --background-accent: #FFFFFF;
+    --headers: #111111;
+    --text: #303030;
+    --links: #9294B9;
+    --links-accent-one: #D9DBF2;
+    --links-accent-two: #B6B8D9;
+    --footer-background: transparent;
+    --footer-top-border: solid 1px #dddddd;
     --success: #21C89C;
     --warning: ##FFAB00;
     --error: #FF6464;
 
     --mobile-padding: 2.5rem;
+    --dark-mode-transition: ease-in 0.5s;
 }
 
-* {
-    /* border: solid 1px red; */
+.dark-mode {
+    --background: #212131;
+    --background-accent: #1E1E2C;
+    --headers: #FFFFFF;
+    --text: #F7F7F7;
+    --links: #9FA2FF;
+    --links-accent-one: #474B7B;
+    --links-accent-two: #313660;
+    --footer-background: var(--background-accent);
+    --footer-top-border: none;
+}
+
+#nav--dark-mode-icon {
+    background-color: var(--links-accent-one);
+    border-radius: 5px;
+    cursor: pointer;
+    height: 2.5rem;
+    margin: 0;
+    transition:
+        background-color var(--dark-mode-transition),
+        color var(--dark-mode-transition);
+    width: 2.5rem;
+
+    /* Flexbox */
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
 }
 
 html {
@@ -28,8 +55,9 @@ html {
 }
 
 a {
-    color: var(--links-primary);
+    color: var(--links);
     text-decoration: none;
+    transition: color var(--dark-mode-transition);
 }
 
 i {
@@ -37,14 +65,14 @@ i {
 }
 
 body {
-    background-color: var(--primary);
-    color: var(--primary-text);
+    background-color: var(--background);
+    color: var(--text);
     font-family: 'Roboto Mono', monospace;
-    /* font-size: 1.25rem; */
     font-weight: 200;
     line-height: 175%;
     margin: 0;
     padding: 0;
+    transition: background-color var(--dark-mode-transition), color var(--dark-mode-transition);
 }
 
 /* ____________________________
@@ -102,8 +130,9 @@ nav {
 }
 
 .nav-links a {
-    color: var(--primary-text);
+    color: var(--text);
     text-decoration: none;
+    transition: color var(--dark-mode-transition);
 }
 
 .nav-links li {
@@ -115,7 +144,7 @@ nav {
 }
 
 #nav-toggle div {
-    background-color: var(--primary-text);
+    background-color: var(--text);
     height: 2px;
     margin: 5px;
     transition: all 0.3s ease;
@@ -180,8 +209,10 @@ _______________________________ */
 }
 
 #landing--header {
+    color: var(--headers);
     font-size: 1.5rem;
     font-weight: 500;
+    transition: color var(--dark-mode-transition);
 }
 
 .landing--links {
@@ -229,13 +260,10 @@ _______________________________ */
 }
 
 .contact--header {
+    color: var(--headers);
     font-size: 1.25rem;
     font-weight: 600;
-}
-
-#contact--copy-email-address {
-    color: var(--links-primary);
-    cursor: pointer;
+    transition: color var(--dark-mode-transition);
 }
 
 .contact--form-top-margin {
@@ -251,22 +279,12 @@ form > label {
     font-size: 0.75rem;
 }
 
-form > input {
+form > input, form > textarea {
     padding: 15px 10px;
     background: transparent;
-    color: white;
-    border: solid 1px white;
+    border: solid 1px var(--text);
     border-radius: 5px;
-    font-size: 1rem;
-    font-family: 'Roboto Mono';
-}
-
-form > textarea {
-    padding: 15px 10px;
-    background: transparent;
-    color: white;
-    border: solid 1px white;
-    border-radius: 5px;
+    color: var(--text);
     font-size: 1rem;
     font-family: 'Roboto Mono';
 }
@@ -277,14 +295,9 @@ form > button {
     font-weight: 200;
 }
 
-form > input:focus-visible {
-    border-color: var(--links-primary);
-    outline: var(--links-primary) solid 2px;
-}
-
-form > textarea:focus-visible {
-    border-color: var(--links-primary);
-    outline: var(--links-primary) solid 2px;
+form > input:focus-visible, form > textarea:focus-visible {
+    border-color: var(--links-accent-one);
+    outline: var(--links-accent-one) solid 2px;
 }
 
 /* ____________________________
@@ -294,10 +307,14 @@ Footer
 
 _______________________________ */
 footer {
-    background-color: var(--background);
+    background-color: var(--footer-background);
+    border-top: var(--footer-top-border);
     font-size: 0.75rem;
     height: 25rem;
     padding: 0 var(--mobile-padding);
+    transition:
+        background-color var(--dark-mode-transition),
+        border-top var(--dark-mode-transition);
 
     /* Flexbox */
     display: flex;
