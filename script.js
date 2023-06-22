@@ -5,7 +5,6 @@ Dark mode
 
 _______________________________ */
 const darkModeIcon = document.getElementById("nav--dark-mode-icon");
-localStorage.setItem("darkModeEnabled", "false");
 let darkModeEnabled = localStorage.getItem("darkModeEnabled");
 
 // Check user's system settings to see if they prefer dark mode by default
@@ -13,26 +12,24 @@ const prefersDarkMode = window.matchMedia && window.matchMedia('(prefers-color-s
 
 if (prefersDarkMode) {
     document.body.classList.add("dark-mode");
-    localStorage.setItem("darkModeEnabled", "true");
+    darkModeIcon.classList.replace("fa-moon", "fa-sun");
     darkModeEnabled = "true";
+} else {
+    darkModeEnabled = "false";
 }
 
 const toggleDarkMode = () => {
-    if(darkModeEnabled === "true") {
+    if (darkModeEnabled === "true") {
         document.body.classList.remove("dark-mode");
-        localStorage.setItem("darkModeEnabled", "false");
+        darkModeIcon.classList.replace("fa-sun", "fa-moon");
         darkModeEnabled = "false";
     } else {
         document.body.classList.add("dark-mode");
-        localStorage.setItem("darkModeEnabled", "true");
+        darkModeIcon.classList.replace("fa-moon", "fa-sun");
         darkModeEnabled = "true";
     }
 
-    if(document.body.classList.contains("dark-mode")) {
-        darkModeIcon.classList.replace("fa-moon", "fa-sun");
-    } else {
-        darkModeIcon.classList.replace("fa-sun", "fa-moon");
-    }
+    localStorage.setItem("darkModeEnabled", darkModeEnabled);
 }
 
 /* ____________________________
