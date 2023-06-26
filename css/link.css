@@ -2,9 +2,10 @@
     background-color: var(--links-accent-one);
     border: solid 1px var(--links-accent-one);
     border-radius: 5px;
-    color: var(--text) !important;
+    color: var(--button-links);
     padding: 0.5rem 2rem;
     cursor: pointer;
+    text-decoration: none;
     transition: ease-in-out 0.25s;
 }
 
@@ -14,7 +15,9 @@
 }
 
 .text-link {
-    transition: ease-in-out 0.25s;
+    color: var(--links);
+    text-decoration: none;
+    transition: color var(--dark-mode-transition);
 }
 
 .text-link:hover > .fa-arrow-right {
@@ -26,4 +29,10 @@
     opacity: 0%;
     transform: rotate(-45deg);
     transition: ease-in-out 0.2s;
+}
+
+.inline-text-link {
+    background-color: var(--links-accent-one);
+    color: var(--links);
+    transition: all var(--dark-mode-transition);
 }

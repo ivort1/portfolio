@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ivan Ortiz | Software Engineer</title>
+
+    <!-- Google Fonts -->
+    <style>@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@100;200;300;400;500;600;700&display=swap');</style>
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" type="text/css" href="index.css" />
+</head>
+<body>
+    <!-- Navigation bar -->
+    <nav id="nav">
+        <div class="nav-bar">
+            <div class="nav-title">Ivan Ortiz</div>
+
+            
+            <div id="nav-toggle" onclick="toggle()">
+                <div id="bar-1"></div>
+                <div id="bar-2"></div>
+                <div id="bar-3"></div>
+            </div>
+        </div>
+        <ul class="nav-links">
+            <li>
+                <a href="index.html">Home</a>
+            </li>
+            <li>
+                <a href="about.html">About</a>
+            </li>
+            <!-- <li>
+                <a href="https://www.google.com" rel="noreferrer noopener" target="_blank">Projects</a>
+            </li> -->
+            <li>
+                <a href="index.html#contact">Contact</a>
+            </li>
+            <li>
+                <i class="fa-solid fa-moon" id="nav--dark-mode-icon" onclick="toggleDarkMode()"></i>
+            </li>
+        </ul>
+    </nav>  
+
+    <div class="container">
+        <!-- About -->
+        <section id="about">
+            <img src="static/mac.jpg" id="about--img">
+            
+            <div id="about--text">
+                <div id="about--header">About me</div>
+                <div id="about--body">
+                    <div>
+                        My coding journey began with customizing my MySpace page using HTML and CSS.
+                        Originally from Southern California, I made the decision to venture out of state for college and attended St. John's University in Queens, NY. There,
+                        I obtained a Bachelor's degree in Computer Science in 2015.
+                    </div>
+                    
+                    <div>
+                        After graduating, I joined IKEA and have been working as a software engineer since 2020. My primary focus is on the frontend development of my team's projects,
+                        although I also explore other areas as needed. I thoroughly enjoy the challenges and creativity that comes with building user-friendly and visually appealing
+                        interfaces. 
+                    </div>
+                        
+                    <div>
+                        If you're in need of a personal or business website, I'm here to help. Feel free to reach out through email and together, we can explore the best options that suit your needs.
+                    </div>
+
+                    <div>
+                        Recruiters interested in discussing career opportunities are also welcome to get in touch. Feel free to reach out to me directly or connect with me on
+                        <a href="https://www.linkedin.com/in/ivanortiz93" rel="noopener noreferrer" target="_blank" class="inline-text-link">LinkedIn</a>. Don't forget to grab a copy of
+                        my <a href="./static/Resume.pdf" rel="noopener noreferrer" target="_blank" class="inline-text-link">resume</a> to learn more about my qualifications and experience.
+                    </div>
+
+                    <a href="mailto:ortiz.ivan93@gmail.com" rel="noopener noreferrer" target="_blank" class="text-link">
+                        <i class="fa-solid fa-envelope icon"></i>Send me an email<i class="fa-solid fa-arrow-right"></i>
+                    </a>
+    
+                    <a href="javascript:void(0);" onclick="copyEmailAddress()" class="text-link">
+                        <i class="fa-solid fa-copy"></i>Copy my email address
+                        <span id="contact--copy-email-address-tooltip"></span>
+                    </a>
+                </div>
+            </div>
+            <!-- Photo by <a href="https://unsplash.com/@wasdrew?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Andras Vas</a> on <a href="https://unsplash.com/backgrounds/phone/keyboard?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a> -->
+        </section>
+    </div>
+
+
+    <!-- Footer -->
+    <footer>
+        <div>
+            <div class="footer--copyright-year"></div>
+            <div class="footer--text">Developed using vanilla JavaScript, HTML, and CSS, without the use of frameworks or libraries.</div>
+        </div>
+
+        <div>
+            <div>Contact</div>
+            <div class="footer--contact-links">
+                <a href="https://www.linkedin.com/in/ivanortiz93" rel="noopener noreferrer" target="_blank" class="text-link">
+                    <i class="fa-brands fa-linkedin icon"></i>LinkedIn<i class="fa-solid fa-arrow-right"></i>
+                </a>
+
+                <a href="https://github.com/ivort1" rel="noopener noreferrer" target="_blank" class="text-link">
+                    <i class="fa-brands fa-github icon"></i>GitHub<i class="fa-solid fa-arrow-right"></i>
+                </a>
+
+                <a href="https://www.instagram.com/ivunortiz/" rel="noopener noreferrer" target="_blank" class="text-link">
+                    <i class="fa-brands fa-instagram icon"></i>Instagram<i class="fa-solid fa-arrow-right"></i>
+                </a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="./script.js" type="text/javascript"></script>
+</body>
+</html>

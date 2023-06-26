@@ -18,9 +18,8 @@
     <!-- Navigation bar -->
     <nav id="nav">
         <div class="nav-bar">
-            <div class="nav-title">Ivan Ortiz</div>
+            <a href="index.html" class="nav-title">Ivan Ortiz</a>
 
-            
             <div id="nav-toggle" onclick="toggle()">
                 <div id="bar-1"></div>
                 <div id="bar-2"></div>
@@ -29,13 +28,16 @@
         </div>
         <ul class="nav-links">
             <li>
-              <a href="https://www.google.com" rel="noreferrer noopener" target="_blank">About</a>
+                <a href="index.html">Home</a>
             </li>
             <li>
+              <a href="about.html">About</a>
+            </li>
+            <!-- <li>
               <a href="https://www.google.com" rel="noreferrer noopener" target="_blank">Projects</a>
-            </li>
+            </li> -->
             <li>
-              <a href="https://www.google.com" rel="noreferrer noopener" target="_blank">Contact</a>
+              <a href="#contact">Contact</a>
             </li>
             <li>
                 <i class="fa-solid fa-moon" id="nav--dark-mode-icon" onclick="toggleDarkMode()"></i>
@@ -82,7 +84,7 @@
         </section> -->
     
         <!-- Contact -->
-        <section class="contact">
+        <section class="contact" id="contact">
             <div class="contact--section" id="contact--section-left">
                 <div class="contact--header">Let's connect</div>
 

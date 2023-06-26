@@ -1,12 +1,14 @@
 @import url("./css/link.css");
 @import url("./css/tooltip.css");
+@import url("./css/about.css");
 
 :root {
     --background: #FAFAFA;
     --background-accent: #FFFFFF;
     --headers: #111111;
     --text: #303030;
-    --links: #9294B9;
+    --button-links: #111111;
+    --links: #111111;
     --links-accent-one: #D9DBF2;
     --links-accent-two: #B6B8D9;
     --footer-background: transparent;
@@ -24,6 +26,7 @@
     --background-accent: #1E1E2C;
     --headers: #FFFFFF;
     --text: #F7F7F7;
+    --button-links: #F7F7F7;
     --links: #9FA2FF;
     --links-accent-one: #474B7B;
     --links-accent-two: #313660;
@@ -51,14 +54,9 @@
 }
 
 html {
+    scroll-behavior: smooth;
     margin: 0;
     padding: 0;
-}
-
-a {
-    color: var(--links);
-    text-decoration: none;
-    transition: color var(--dark-mode-transition);
 }
 
 i {
@@ -110,9 +108,12 @@ nav {
 }
 
 .nav-title {
+    color: var(--text);
     cursor: pointer;
     font-size: 1.25rem;
     font-weight: 500;
+    text-decoration: none;
+    transition: color var(--dark-mode-transition);
 }
 
 .nav-links {
@@ -232,6 +233,7 @@ Contact
 
 _______________________________ */
 .contact {
+    scroll-behavior: smooth !important;
     width: 100%;
 
     /* Flexbox */
@@ -441,7 +443,17 @@ _______________________________ */
     }
 }
 
-@media (min-width:2000px) {
+@media (min-width:1500px) {
+    .container {
+        padding: 5rem 30rem;
+    }
+
+    footer {
+        padding: 0 30rem;
+    }
+}
+
+@media (min-width:2200px) {
     nav {
         padding: 5rem 20rem;
     }

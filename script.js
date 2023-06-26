@@ -5,20 +5,21 @@ Dark mode
 
 _______________________________ */
 const darkModeIcon = document.getElementById("nav--dark-mode-icon");
+localStorage.setItem("darkModeEnabled", "false");
 let darkModeEnabled = localStorage.getItem("darkModeEnabled");
-localStorage.setItem("hasBeenToggled", "false");
-let hasBeenToggled = localStorage.getItem("hasBeenToggled");
+// localStorage.setItem("hasBeenToggled", "false");
+// let hasBeenToggled = localStorage.getItem("hasBeenToggled");
 
 // Check user's system settings to see if they prefer dark mode by default
-const prefersDarkMode = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches;
+// const prefersDarkMode = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches;
 
-if (prefersDarkMode && hasBeenToggled === "false") {
-    document.body.classList.add("dark-mode");
-    darkModeIcon.classList.replace("fa-moon", "fa-sun");
-    localStorage.setItem("darkModeEnabled", "true");
-} else {
-    localStorage.setItem("darkModeEnabled", "false");
-}
+// if (prefersDarkMode && hasBeenToggled === "false") {
+//     document.body.classList.add("dark-mode");
+//     darkModeIcon.classList.replace("fa-moon", "fa-sun");
+//     localStorage.setItem("darkModeEnabled", "true");
+// } else {
+//     localStorage.setItem("darkModeEnabled", "false");
+// }
 
 const toggleDarkMode = () => {
     if (darkModeEnabled === "true") {
@@ -32,7 +33,7 @@ const toggleDarkMode = () => {
     }
 
     localStorage.setItem("darkModeEnabled", darkModeEnabled);
-    localStorage.setItem("hasBeenToggled", "true");
+    // localStorage.setItem("hasBeenToggled", "true");
 }
 
 /* ____________________________
@@ -74,7 +75,7 @@ const toggle = () => {
         navLinks = document.querySelectorAll(".nav-links li");
 
         if(height === "64px") {
-            nav.style.height = "20rem";
+            nav.style.height = "30rem";
         } else {
             nav.style.height = "4rem";
         }
