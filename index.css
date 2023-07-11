@@ -331,6 +331,10 @@ footer .footer--text {
     max-width: 30rem;
 }
 
+#footer--github-link {
+    text-decoration: underline;
+}
+
 .footer--contact-links {
     /* Flexbox */
     display: flex;

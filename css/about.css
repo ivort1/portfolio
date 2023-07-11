@@ -41,6 +41,10 @@
     width: 20rem;
 }
 
+summary:hover {
+    cursor: pointer;
+}
+
 /* ____________________________
 
 

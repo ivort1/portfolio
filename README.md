@@ -1,54 +1,29 @@
-<p align="center">
-  <a href="https://www.gatsbyjs.com/?utm_source=starter&utm_medium=readme&utm_campaign=minimal-starter">
-    <img alt="Gatsby" src="https://www.gatsbyjs.com/Gatsby-Monogram.svg" width="60" />
-  </a>
-</p>
-<h1 align="center">
-  Gatsby minimal starter
-</h1>
 
-## 🚀 Quick start
+#### 🖥️ **My personal website that displays my resume, contact information, projects, etc. This static site is basic and uses plain JavaScript, HTML, and CSS with no framworks or libraries.** 
 
-1.  **Create a Gatsby site.**
+- Roboto-mono font provided by [Google Fonts](https://fonts.google.com/)
+- Icons provided by [Font Awesome](https://fontawesome.com/)
+- Code stored on GitHub (obviously) and hosted on [Netlify](https://www.netlify.com/)
+- The image on my About Me page was taken by [Andras Vas](https://unsplash.com/@wasdrew?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText)
 
-    Use the Gatsby CLI to create a new site, specifying the minimal starter.
 
-    ```shell
-    # create a new Gatsby site using the minimal starter
-    npm init gatsby
-    ```
+<br>
 
-2.  **Start developing.**
+#### 🚧 **Work-in-progress**
 
-    Navigate into your new site’s directory and start it up.
+***
 
-    ```shell
-    cd my-gatsby-site/
-    npm run develop
-    ```
+- Create a Projects section that connects to a headless CMS. I want to create a blog that goes into details and specifics for each of my personal and professional software engineering projects.
+- Implement web components in order to reuse code and not have to make changes in multiple places (navigation bar, footer, etc).
+- The mobile menu should close once a link or button is clicked within the menu.
+- Implement the Stripe API and create a page to receive payments for freelance and contract work.
+- All images should be compressed and converted to Webp.
+- Create a custom confirmation page for my contact form. Right now it's using the default page provided by Netlify.
+- Accessibility check: make sure the site follows best practices.
 
-3.  **Open the code and start customizing!**
+#### 🪲 **Known bugs**
 
-    Your site is now running at http://localhost:8000!
+***
 
-    Edit `src/pages/index.js` to see your site update in real-time!
-
-4.  **Learn more**
-
-    - [Documentation](https://www.gatsbyjs.com/docs/?utm_source=starter&utm_medium=readme&utm_campaign=minimal-starter)
-
-    - [Tutorials](https://www.gatsbyjs.com/tutorial/?utm_source=starter&utm_medium=readme&utm_campaign=minimal-starter)
-
-    - [Guides](https://www.gatsbyjs.com/tutorial/?utm_source=starter&utm_medium=readme&utm_campaign=minimal-starter)
-
-    - [API Reference](https://www.gatsbyjs.com/docs/api-reference/?utm_source=starter&utm_medium=readme&utm_campaign=minimal-starter)
-
-    - [Plugin Library](https://www.gatsbyjs.com/plugins?utm_source=starter&utm_medium=readme&utm_campaign=minimal-starter)
-
-    - [Cheat Sheet](https://www.gatsbyjs.com/docs/cheat-sheet/?utm_source=starter&utm_medium=readme&utm_campaign=minimal-starter)
-
-## 🚀 Quick start (Gatsby Cloud)
-
-Deploy this starter with one click on [Gatsby Cloud](https://www.gatsbyjs.com/cloud/):
-
-[<img src="https://www.gatsbyjs.com/deploynow.svg" alt="Deploy to Gatsby Cloud">](https://www.gatsbyjs.com/dashboard/deploynow?url=https://github.com/gatsbyjs/gatsby-starter-minimal)
+- Light/dark mode does not toggle properly for the nav bar on mobile view
+- Local storage is not working properly for light/dark mode. The user's prefence is not being saved when the page is refreshed or revisited.
