@@ -1,0 +1,54 @@
+#landing {
+    margin: 3rem auto;
+    width: 90%;
+    
+    /* Flexbox */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 5rem;
+}
+
+.landing--paragraph {
+    /* Flexbox */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 1.5rem;
+}
+
+#landing--h1 {
+    width: 100%;
+}
+
+#landing--h3 {
+    width: 100%;
+}
+
+#landing--download {
+    text-decoration: underline;
+
+    /* Flexbox */
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+#landing--download img {
+    height: 1rem;
+    width: 1rem;
+}
+
+#landing--faq {
+    width: 100%;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 2rem;
+}

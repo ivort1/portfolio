@@ -1,0 +1,31 @@
+/*
+----------
+Landing
+----------
+*/
+#landing {
+    margin: 3rem auto;
+    width: 90%;
+
+    /* Flexbox */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+}
+
+#landing--h1 {
+    color: var(--secondary-color);
+}
+
+#landing--links {
+    width: 100%;
+    
+    /* Flexbox */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+}

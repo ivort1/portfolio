@@ -1,0 +1,52 @@
+:root {
+    font-size: 16px;
+
+    --primary-color: #F8F9FA;
+    --secondary-color: #343A40;
+    --third-color: #212529;
+    --focus-color: #4949FF;
+
+    --nav-background-color: #343A40;
+    --nav-text-color: #F8F9FA;
+    --nav-dark-mode-toggle-color: #212529;
+
+    --footer-background-color: #343A40;
+    --footer-text-color: #F8F9FA;
+}
+
+.dark-mode {
+    --primary-color: #343A40;
+    --secondary-color: #F8F9FA;
+    --focus-color: #FF8000;
+
+
+    --nav-background-color: #212529;
+    --nav-text-color: #F8F9FA;
+    --nav-dark-mode-toggle-color: #343A40;
+
+    --footer-background-color: #212529;
+    /* --footer-text-color: #F8F9FA; */
+}
+
+body {
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
+    font-family: "Poppins", "Arial";
+    margin-bottom: 21.53125rem;
+}
+
+h1 {
+    font-size: 2rem;
+    font-weight: 500;
+    line-height: 125%;
+}
+
+h3 {
+    font-size: 1.25rem;
+    font-weight: 500;
+    line-height: 125%;
+}
+
+a {
+    color: var(--secondary-color) !important;
+}
