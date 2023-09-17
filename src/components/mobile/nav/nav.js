@@ -46,11 +46,15 @@ class Nav extends HTMLElement {
             document.body.classList.add("dark-mode");
             this.darkModeIcon.src="/static/svg/sun.svg";
             localStorage.setItem("darkModeEnabled", "true");
+            document.documentElement.style.setProperty('--svg-arrow-path', '/static/svg/dark/up-arrow.svg');
         } else {
             document.body.classList.remove("dark-mode");
             this.darkModeIcon.src="/static/svg/moon.svg";
             localStorage.setItem("darkModeEnabled", "false");
+            document.documentElement.style.setProperty('--svg-arrow-path', '/static/svg/light/up-arrow.svg');
         }
+
+        window.dispatchEvent(new CustomEvent('darkModeToggle', { detail: darkModeEnabled }));
     }
 
     toggleMenu() {

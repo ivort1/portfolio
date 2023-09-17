@@ -3,8 +3,10 @@
 
     --primary-color: #F8F9FA;
     --secondary-color: #343A40;
-    --third-color: #212529;
     --focus-color: #4949FF;
+
+    --primary-btn-bg-color: #343A40;
+    --primary-btn-bg-color-hover: #212529;
 
     --nav-background-color: #343A40;
     --nav-text-color: #F8F9FA;
@@ -19,13 +21,14 @@
     --secondary-color: #F8F9FA;
     --focus-color: #FF8000;
 
+    --primary-btn-bg-color: #F8F9FA;
+    --primary-btn-bg-color-hover: #E0E1E2;
 
     --nav-background-color: #212529;
     --nav-text-color: #F8F9FA;
     --nav-dark-mode-toggle-color: #343A40;
 
     --footer-background-color: #212529;
-    /* --footer-text-color: #F8F9FA; */
 }
 
 body {
@@ -33,6 +36,7 @@ body {
     color: var(--secondary-color);
     font-family: "Poppins", "Arial";
     margin-bottom: 21.53125rem;
+    transition: all ease-in-out 0.5s;
 }
 
 h1 {

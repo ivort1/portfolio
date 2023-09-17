@@ -8,13 +8,13 @@ detailsTemplate.innerHTML =
     <div id="details">
         <div id="details--summary">
             <slot name="summary"></slot>
-            <img id="details--arrow" src="/static/svg/light/up-arrow.svg" alt="arrow" />
+            <svg-up-arrow id="details--arrow"></svg-up-arrow>
         </div>
         <div id="details--content"><slot name="content"></slot></div>
     </div>
 `;
 
-class Details extends HTMLElement {
+class Details extends HTMLElement {ac
     constructor() {
         super();
 
@@ -36,7 +36,6 @@ class Details extends HTMLElement {
         window.addEventListener('toggle', (e) => {
             if (e.detail !== this) {
                 this.summary.classList.remove("focus");
-                this.arrow.setAttribute("src", "/static/svg/light/up-arrow.svg");
             }
         });
     }
@@ -53,9 +52,10 @@ class Details extends HTMLElement {
         this.summary.classList.add("focus");
 
         if (this.summary.classList.contains("focus")) {
-            this.arrow.setAttribute("src", "/static/svg/light/up-arrow-focus.svg");
+            this.arrow.classList.add("focus");
+
         } else {
-            this.arrow.setAttribute("src", "/static/svg/light/up-arrow.svg");
+            this.arrow.classList.remove("focus");
         }
 
         window.dispatchEvent(new CustomEvent('toggle', { detail: this }));

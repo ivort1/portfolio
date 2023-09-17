@@ -6,9 +6,8 @@ secondaryBtnTemplate.innerHTML =
     </style>
 
     <a id="anchor">
-        <img id="icon" />
         <slot></slot>
-        <img id="arrow" src="/static/svg/right-arrow.svg" alt="arrow" />
+        <svg-right-arrow id="arrow"></svg-right-arrow>
     </a>
 `
 
@@ -25,10 +24,6 @@ class SecondaryButton extends HTMLElement {
         anchor.setAttribute("href", this.getAttribute("href"));
         anchor.setAttribute("target", "_blank");
         anchor.setAttribute("rel", "noopener noreferrer");
-
-        const image = this.shadowRoot.getElementById("icon");
-        image.setAttribute("src", this.getAttribute("src"));
-        image.setAttribute("alt", this.getAttribute("alt"));
     }
 }
 

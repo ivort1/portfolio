@@ -6,7 +6,6 @@ primaryBtnTemplate.innerHTML =
     </style>
 
     <a id="anchor">
-        <img id="image"/>
         <slot></slot>
     </a>
 `
@@ -24,10 +23,6 @@ class PrimaryButton extends HTMLElement {
         anchor.setAttribute("href", this.getAttribute("href"));
         anchor.setAttribute("target", "_blank");
         anchor.setAttribute("rel", "noopener noreferrer");
-
-        const image = this.shadowRoot.getElementById("image");
-        image.setAttribute("src", this.getAttribute("src"));
-        image.setAttribute("alt", this.getAttribute("alt"));
     }
 }
 

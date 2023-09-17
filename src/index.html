@@ -11,9 +11,16 @@
         <script src="./components/button/secondary/button.js"></script>
         <script src="./components/link/link.js"></script>
         <script src="./components/footer/footer.js"></script>
+        <script src="./components/svg/document.js"></script>
+        <script src="./components/svg/email.js"></script>
+        <script src="./components/svg/linkedin.js"></script>
+        <script src="./components/svg/github.js"></script>
+        <script src="./components/svg/right-arrow.js"></script>
 
         <!-- Google Fonts -->
         <style>@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');</style>
+        
+        <!-- CSS -->
         <link href="./preflight.css" rel="stylesheet">
         <link href="./globals.css" rel="stylesheet">
         <link href="./index.css" rel="stylesheet">
@@ -27,10 +34,25 @@
             <p>Experienced JavaScript and Java developer specializing in crafting elegant digital experiences to enhance efficiency and productivity.</p>
             
             <div id="landing--links">
-                <primary-button href="/static/pdf/Resume_Ivan_Ortiz.pdf" src="/static/svg/dark/document.svg" alt="pdf">My resume</primary-button>
-                <secondary-button href="mailto:ortiz.ivan93@gmail.com" src="/static/svg/email.svg" alt="email">Email me</secondary-button>
-                <secondary-button href="https://www.linkedin.com/in/ivanortiz93" src="/static/svg/linkedin.svg" alt="linkedin">LinkedIn</secondary-button>
-                <secondary-button href="https://github.com/ivort1" src="/static/svg/github.svg" alt="github">GitHub</secondary-button>
+                <primary-button href="/static/pdf/Resume_Ivan_Ortiz.pdf">
+                    <svg-document></svg-document>
+                    My resume
+                </primary-button>
+
+                <secondary-button href="mailto:ortiz.ivan93@gmail.com">
+                    <svg-email></svg-email>
+                    Email me
+                </secondary-button>
+
+                <secondary-button href="https://www.linkedin.com/in/ivanortiz93">
+                    <svg-linkedin></svg-linkedin>
+                    LinkedIn
+                </secondary-button>
+
+                <secondary-button href="https://github.com/ivort1">
+                    <svg-github></svg-github>
+                    GitHub
+                </secondary-button>
             </div>
         </section>
 
