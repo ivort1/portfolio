@@ -1,0 +1,25 @@
+a {
+    color: var(--footer-text-color);
+    text-decoration: none;
+
+    /* Flexbox */
+    display: inline-flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+#icon {
+    margin-right: 0.5rem;
+}
+
+#arrow {
+    opacity: 0%;
+    transform: rotate(-45deg);
+    transition: ease-in-out 0.2s;
+}
+
+a:hover > #arrow {
+    opacity: 100%;
+    transform: rotate(-45deg) translate(10px, 0);
+}

@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Ivan Ortiz | Software Engineer</title>
+        
+        <!-- JavaScript -->
+        <script src="../../components/mobile/nav/nav.js"></script>
+        <script src="../../components/button/primary/button.js"></script>
+        <script src="../../components/button/secondary/button.js"></script>
+        <script src="../../components/details/details.js"></script>
+        <script src="../../components/link/link.js"></script>
+        <script src="../../components/footer/footer.js"></script>
+        <script src="../../components/svg/document.js"></script>
+        <script src="../../components/svg/email.js"></script>
+        <script src="../../components/svg/linkedin.js"></script>
+        <script src="../../components/svg/download.js"></script>
+        <script src="../../components/svg/up-arrow.js"></script>
+        <script src="../../components/svg/right-arrow.js"></script>
+
+        <!-- Google Fonts -->
+        <style>@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');</style>
+        
+        <!-- CSS -->
+        <link href="../../preflight.css" rel="stylesheet">
+        <link href="../../globals.css" rel="stylesheet">
+        <link href="./for-recruiters.css" rel="stylesheet">
+
+    </head>
+    <body>
+        <mobile-nav></mobile-nav>
+
+        <section id="landing">
+            <div class="landing--paragraph">
+                <h1 id="landing--h1">For recruiters</h1>
+
+                <p>
+                    I'm always open to exploring new opportunities.
+                    If you come across a role that you believe aligns with my expertise and interests,
+                    I'd be happy to discuss it further. Feel free to reach out to me via email or connect
+                    with me on LinkedIn at your convenience.
+                </p>
+
+                <div id="landing--paragraph-buttons">
+                    <primary-button href="/static/pdf/Resume_Ivan_Ortiz.pdf">
+                        <svg-document></svg-document>
+                        My resume
+                    </primary-button>
+    
+                    <secondary-button href="mailto:ortiz.ivan93@gmail.com">
+                        <svg-email></svg-email>
+                        Email me
+                    </secondary-button>
+    
+                    <secondary-button href="https://www.linkedin.com/in/ivanortiz93">
+                        <svg-linkedin></svg-linkedin>
+                        LinkedIn
+                    </secondary-button>
+                </div>
+
+            </div>
+
+            <div class="landing--paragraph">
+                <h3 id="landing--h3">Answers to common questions</h3>
+                
+                <p>
+                    Below is a compilation of frequently asked questions, along with their answers, that are
+                    typically posed during the preliminary phase of recruitment. For a more convenient viewing
+                    and reading experience, you also have the option to download these questions in PDF format.
+                </p>
+                
+                <a id="landing--download" href="/static/pdf/FAQs_Ivan_Ortiz.pdf" download>
+                    <svg-download></svg-download>
+                    Download FAQs
+                </a>
+            </div>
+
+
+            <div id="landing--faq">
+                <custom-details>
+                    <span slot="summary">Describe your experience as a software engineer.</span>
+                    <span slot="content">
+                        Currently based in Los Angeles, CA, I have been working as a software
+                        engineer at IKEA since August of 2020. My team consists of around twenty individuals,
+                        including frontend, backend, and QA engineers, UI/UX designers, a product manager, and several
+                        product owners. Projects I have worked on:
+                    
+                    <ul>
+                        <li>Email template development with XSLT, XML, and Litmus</li>
+                        <li>Frontend development utilizing React, JavaScript, Sass, and React Storybook</li>
+                        <li>Backend development using Java and Spring Boot</li>
+                        <li>React mobile development using Capacitor</li>
+                        <li>Cloud-based work with Google Cloud Platform and its services such as BigQuery,
+                            Kubernetes Engine, Cloud Storage, Cron Job, and more.
+                        </li>
+                    </ul>
+                    </span>
+                </custom-details>
+
+                <custom-details>
+                    <span slot="summary">
+                        How familiar are you with DevOps and Agile/Scrum development
+                        methodologies and processes?
+                    </span>
+                    <span slot="content">
+                        Our team has successfully implemented a pipeline that covers development,
+                        staging, and production stages. This pipeline leverages a combination of Docker, Helm charts,
+                        Artifactory, and GitHub actions. While I wasn't involved in setting it up initially, I have gained
+                        valuable experience working with this pipeline. I have actively participated in modifying Helm
+                        charts and have successfully resolved deployment issues within GitHub actions when they
+                        arose.
+
+                        <div>
+                            To effectively manage our tasks and projects, we utilize Jira as our ticket management system.
+                            During our daily standup meetings, we review the Kanban board together, discussing individual
+                            assigned tickets and addressing any potential blockers. Our work is organized into sprints, each
+                            lasting two weeks. At the end of each sprint, we conduct a retrospective meeting to reflect on
+                            what went well and identify areas for improvement.
+                        </div>
+
+                        <div>
+                            Prior to the start of each sprint, we hold a sprint planning meeting where we collaborate to
+                            create new tickets, assign tasks from the backlog, and establish our overall goals for the
+                            upcoming two weeks. For seamless communication and updates, all relevant information and
+                            comments are recorded within the corresponding tickets. One of our product specialists
+                            implemented a helpful integration where creating a new branch in GitHub using a ticket number
+                            automatically generates a link within the corresponding Jira ticket, which helps tremendously
+                            with tracking progress and collaboration.
+                        </div>
+
+                        <div>
+                            And finally, we maintain a dedicated Slack channel with automated notifications enabled. This
+                            allows us to receive notifications whenever a build is released or if any failures occur, ensuring
+                            efficient communication and swift response to any issues that may arise during the development
+                            process.
+                        </div>
+                    </span>
+                </custom-details>
+
+                <custom-details>
+                    <span slot="summary">What is your work authorization status?</span>
+                    <span slot="content">
+                        I am a US citizen and do not require sponsorship of any kind.
+                    </span>
+                </custom-details>
+
+                <custom-details>
+                    <span slot="summary">How soon would you be available to start in a new role?</span>
+                    <span slot="content">
+                        In line with professional etiquette, I would tender my two-week notice to my
+                        current employer on the same day that I sign a new employment contract. Following
+                        the completion of this fourteen-day period, I would promptly commence my duties in the new role.
+                    </span>
+                </custom-details>
+
+                <custom-details>
+                    <span slot="summary">On-site, hybrid, or remote?</span>
+                    <span slot="content">
+                        Remote would be my preferred option. I have successfully worked remotely for IKEA since August 2020
+                        and am accustomed to collaborating and operating in a digital environment. Despite residing on
+                        the west coast, my work schedule is aligned with the eastern time zone, and I’m typically online
+                        from 6:30am to 2:30pm PST. Essentially, I am highly adaptable when it comes to my working
+                        hours and can adjust them to accommodate the team's needs. I am also open to occasional
+                        travel for significant meetings and milestones, as this has been a regular practice in my current
+                        role with IKEA. Both on-site and hybrid work arrangements are acceptable as well, however, my
+                        commute should not exceed one and a half hours in each direction.
+                    </span>
+                </custom-details>
+
+                <custom-details>
+                    <span slot="summary">Are you willing to relocate?</span>
+                    <span slot="content">
+                        Provided that a relocation package is included, I am open to relocating. My top choices for relocation would be:
+                        <ul>
+                            <li>Dallas, TX</li>
+                            <li>San Diego, CA</li>
+                            <li>Temecula, CA</li>
+                            <li>Visalia, CA</li>
+                            <li>Tulsa, OK</li>
+                        </ul>
+
+                        I would not be willing to relocate to the following cities:
+                        <ul>
+                            <li>San Francisco, CA</li>
+                            <li>Portland, OR</li>
+                            <li>New York, NY</li>
+                        </ul>
+                    </span>
+                </custom-details>
+
+                <custom-details>
+                    <span slot="summary">What is your desired salary?</span>
+                    <span slot="content">
+                        My target base salary is $160,000, which is based on the current figures I’m seeing for software
+                        engineers in the Los Angeles area, insights gathered from recruiters and colleagues, and the
+                        high cost of living in Southern California. However, I am flexible regarding this figure, particularly
+                        if the compensation package includes stock options and an annual bonus. While I value fair
+                        compensation, my priority is joining a great company with an exceptional team and engaging
+                        projects that allow me to expand my knowledge base. I am more than willing to have a
+                        constructive discussion about my salary, as I don’t want it to be the determining factor in
+                        considering my suitability for a role.
+                    </span>
+                </custom-details>
+            </div>
+        </section>
+
+        <custom-footer></custom-footer>
+    </body>
+</html>

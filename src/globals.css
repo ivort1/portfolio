@@ -1,0 +1,58 @@
+:root {
+    font-size: 16px;
+
+    --primary-color: #F8F9FA;
+    --secondary-color: #343A40;
+    --focus-color: #000000;
+
+    --primary-btn-text-color: #F8F9FA;
+    --primary-btn-bg-color: #0f1929;
+    --primary-btn-bg-color-hover: #27354b;
+
+    --nav-background-color: #0f1929;
+    --nav-text-color: #F8F9FA;
+    --nav-dark-mode-toggle-color: #27354b;
+
+    --footer-background-color: #0f1929;
+    --footer-text-color: #F8F9FA;
+}
+
+.dark-mode {
+    --primary-color: #0f1929;
+    --secondary-color: #F8F9FA;
+    --focus-color: #03fffb;
+
+    --primary-btn-text-color: #F8F9FA;
+    --primary-btn-bg-color: #27354b;
+    --primary-btn-bg-color-hover: #202b3d;
+
+    --nav-background-color: #0c1422;
+    --nav-text-color: #F8F9FA;
+    --nav-dark-mode-toggle-color: #27354b;
+
+    --footer-background-color: #0c1422;
+}
+
+body {
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
+    font-family: "Poppins", "Arial";
+    /* margin-bottom: 21.53125rem; */
+    transition: all ease-in-out 0.5s;
+}
+
+h1 {
+    font-size: 2rem;
+    font-weight: 500;
+    line-height: 125%;
+}
+
+h3 {
+    font-size: 1.25rem;
+    font-weight: 500;
+    line-height: 125%;
+}
+
+a {
+    color: var(--secondary-color);
+}
