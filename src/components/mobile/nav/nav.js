@@ -5,7 +5,7 @@ mobileNavTemplate.innerHTML =
 
     <nav id="nav">
         <div id="nav--content">
-            <a href="/src/index.html" id="nav--content-title">Ivan Ortiz</a>
+            <a href="/" id="nav--content-title">Ivan Ortiz</a>
 
             <div id="nav--toggle-menu">
                 <div id="bar-1"></div>

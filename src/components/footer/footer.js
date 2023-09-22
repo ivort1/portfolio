@@ -13,35 +13,35 @@ footerTemplate.innerHTML =
             <div id="footer--links">
                 <custom-link
                     href="https://www.linkedin.com/in/ivanortiz93"
-                    src="/static/svg/dark/linkedin.svg"
-                    alt="Linkedin"
+                    alt="LinkedIn"
                     width="16px"
                     height="16px"
                     arrowWidth="12px"
                     arrowHeight="12px">
-                    Linkedin
+                        <span slot="svg"><svg--linkedin></svg--linkedin></span>
+                        <span slot="text">LinkedIn</span>
                 </custom-link>
 
                 <custom-link
                     href="https://github.com/ivort1"
-                    src="/static/svg/dark/github.svg"
                     alt="GitHub"
                     width="16px"
                     height="16px"
                     arrowWidth="12px"
                     arrowHeight="12px">
-                    GitHub
+                        <span slot="svg"><svg--github></svg--github></span>
+                        <span slot="text">GitHub</span>
                 </custom-link>
 
                 <custom-link
                     href="https://www.instagram.com/ivunortiz/"
-                    src="/static/svg/dark/instagram.svg"
                     alt="Instagram"
                     width="16px"
                     height="16px"
                     arrowWidth="12px"
                     arrowHeight="12px">
-                    Instagram
+                        <span slot="svg"><svg--instagram></svg--instagram></span>
+                        <span slot="text">Instagram</span>
                 </custom-link>
             </div>
 
