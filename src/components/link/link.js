@@ -5,7 +5,7 @@ linkTemplate.innerHTML =
 
     <a id="anchor">
         <slot name="svg" id="icon"></slot>
-        <slot name="text"></slot>
+        <slot name="text" id="text"></slot>
         <svg-right-arrow id="arrow"></svg-right-arrow>
     </a>
 `

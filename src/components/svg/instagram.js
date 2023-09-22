@@ -15,7 +15,6 @@ svgInstagramTemplate.innerHTML =
         }
     </style>
 
-    <?xml version="1.0" encoding="UTF-8" standalone="no"?>
     <svg
     version="1.1"
     id="svg-instagram"
