@@ -1,9 +1,7 @@
 const cardTemplate = document.createElement("template");
 cardTemplate.innerHTML = 
 `
-    <style>
-        @import url('/src/components/card/card.css');
-    </style>
+    <link rel="stylesheet" href="/components/card/card.css">
 
     <div id="card">
         <h4>

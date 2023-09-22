@@ -1,7 +1,7 @@
 const secondaryBtnTemplate = document.createElement("template");
 secondaryBtnTemplate.innerHTML = 
 `
-    <link rel="preload" href="/src/components/button/secondary/button.css" as="style" onload="this.rel='stylesheet'">
+    <link rel="stylesheet" href="/components/button/secondary/button.css">
 
     <a id="anchor">
         <slot></slot>

@@ -1,9 +1,7 @@
 const footerTemplate = document.createElement("template");
 footerTemplate.innerHTML = 
 `
-    <style>
-        @import url("/src/components/footer/footer.css")
-    </style>
+    <link rel="stylesheet" href="/components/footer/footer.css">
 
     <footer id="footer">
         <div id="footer--content">

@@ -1,9 +1,7 @@
 const linkTemplate = document.createElement("template");
 linkTemplate.innerHTML = 
 `
-    <style>
-        @import url('/src/components/link/link.css');
-    </style>
+    <link rel="stylesheet" href="/components/link/link.css">
 
     <a id="anchor">
         <img id="icon"/>

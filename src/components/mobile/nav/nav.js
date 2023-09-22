@@ -15,10 +15,10 @@ mobileNavTemplate.innerHTML =
         </div>
         <ul class="nav--links">
             <li>
-                <a href="/src/index.html">Home</a>
+                <a href="/">Home</a>
             </li>
             <li>
-                <a href="/src/pages/for-recruiters/for-recruiters.html">For recruiters</a>
+                <a href="/pages/for-recruiters/for-recruiters.html">For recruiters</a>
             </li>
             <li>
                 <img src="/static/svg/moon.svg" alt="moon" id="nav--dark-mode-icon" />

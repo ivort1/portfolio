@@ -1,9 +1,7 @@
 const detailsTemplate = document.createElement("template");
 detailsTemplate.innerHTML =
 `
-    <style>
-        @import url("/src/components/details/details.css");
-    </style>    
+    <link rel="stylesheet" href="/components/details/details.css">
 
     <div id="details">
         <div id="details--summary">

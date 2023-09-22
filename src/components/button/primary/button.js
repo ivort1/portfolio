@@ -1,8 +1,8 @@
 const primaryBtnTemplate = document.createElement("template");
 primaryBtnTemplate.innerHTML = 
-`
-    <link rel="preload" href="/src/components/button/primary/button.css" as="style" onload="this.rel='stylesheet'">
-   
+`   
+    <link rel="stylesheet" href="/components/button/primary/button.css">
+
     <a id="anchor">
         <slot></slot>
     </a>
