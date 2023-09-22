@@ -18,7 +18,7 @@ footerTemplate.innerHTML =
                     height="16px"
                     arrowWidth="12px"
                     arrowHeight="12px">
-                        <span slot="svg"><svg--linkedin></svg--linkedin></span>
+                        <span slot="svg"><svg-linkedin></svg-linkedin></span>
                         <span slot="text">LinkedIn</span>
                 </custom-link>
 
@@ -29,7 +29,7 @@ footerTemplate.innerHTML =
                     height="16px"
                     arrowWidth="12px"
                     arrowHeight="12px">
-                        <span slot="svg"><svg--github></svg--github></span>
+                        <span slot="svg"><svg-github></svg-github></span>
                         <span slot="text">GitHub</span>
                 </custom-link>
 
@@ -40,7 +40,7 @@ footerTemplate.innerHTML =
                     height="16px"
                     arrowWidth="12px"
                     arrowHeight="12px">
-                        <span slot="svg"><svg--instagram></svg--instagram></span>
+                        <span slot="svg"><svg-instagram></svg-instagram></span>
                         <span slot="text">Instagram</span>
                 </custom-link>
             </div>
