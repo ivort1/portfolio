@@ -2,7 +2,7 @@ const mobileNavTemplate = document.createElement("template");
 mobileNavTemplate.innerHTML = 
 `
     <style>
-        @import url("/src/components/mobile/nav/nav.css");
+        <link rel="stylesheet" href="/src/components/mobile/nav/nav.css">
     </style>
 
     <nav id="nav">
