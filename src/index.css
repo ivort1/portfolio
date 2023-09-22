@@ -1,10 +1,6 @@
-/*
-----------
-Landing
-----------
-*/
-#landing {
-    margin: 3rem auto;
+#main {
+    margin: 5rem auto;
+    min-height: 80vh;
     width: 90%;
 
     /* Flexbox */
@@ -12,7 +8,24 @@ Landing
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    gap: 5rem;
+}
+
+/*
+----------
+Landing
+----------
+*/
+#landing {
+    width: 100%;
+
+    /* Flexbox */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     gap: 2rem;
+
 }
 
 #landing--h1 {
@@ -28,4 +41,61 @@ Landing
     justify-content: center;
     align-items: center;
     gap: 2rem;
+}
+
+/*
+----------
+Projects
+----------
+*/
+#projects {
+    width: 100%;
+
+     /* Flexbox */
+     display: flex;
+     flex-direction: column;
+     justify-content: center;
+     align-items: center;
+     gap: 2rem;
+}
+
+#projects--h3 {
+    width: 100%;
+}
+
+#projects--cards {
+    width: 100%;
+
+    /* Flexbox */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+}
+
+@media screen and (min-width: 1024px) {
+    #main {
+        width: 35%;
+    }
+
+    #landing--links {        
+        /* Flexbox */
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        align-items: center;
+        flex-wrap: wrap;
+        gap: 3rem;
+    }
+
+    #projects--cards {
+        /* Flexbox */
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        align-items: center;
+        flex-wrap: wrap;
+        gap: 2rem;
+    }
 }

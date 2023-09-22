@@ -3,39 +3,41 @@
 
     --primary-color: #F8F9FA;
     --secondary-color: #343A40;
-    --focus-color: #4949FF;
+    --focus-color: #000000;
 
-    --primary-btn-bg-color: #343A40;
-    --primary-btn-bg-color-hover: #212529;
+    --primary-btn-text-color: #F8F9FA;
+    --primary-btn-bg-color: #0f1929;
+    --primary-btn-bg-color-hover: #27354b;
 
-    --nav-background-color: #343A40;
+    --nav-background-color: #0f1929;
     --nav-text-color: #F8F9FA;
-    --nav-dark-mode-toggle-color: #212529;
+    --nav-dark-mode-toggle-color: #27354b;
 
-    --footer-background-color: #343A40;
+    --footer-background-color: #0f1929;
     --footer-text-color: #F8F9FA;
 }
 
 .dark-mode {
-    --primary-color: #343A40;
+    --primary-color: #0f1929;
     --secondary-color: #F8F9FA;
-    --focus-color: #FF8000;
+    --focus-color: #03fffb;
 
-    --primary-btn-bg-color: #F8F9FA;
-    --primary-btn-bg-color-hover: #E0E1E2;
+    --primary-btn-text-color: #F8F9FA;
+    --primary-btn-bg-color: #27354b;
+    --primary-btn-bg-color-hover: #202b3d;
 
-    --nav-background-color: #212529;
+    --nav-background-color: #0c1422;
     --nav-text-color: #F8F9FA;
-    --nav-dark-mode-toggle-color: #343A40;
+    --nav-dark-mode-toggle-color: #27354b;
 
-    --footer-background-color: #212529;
+    --footer-background-color: #0c1422;
 }
 
 body {
     background-color: var(--primary-color);
     color: var(--secondary-color);
     font-family: "Poppins", "Arial";
-    margin-bottom: 21.53125rem;
+    /* margin-bottom: 21.53125rem; */
     transition: all ease-in-out 0.5s;
 }
 
@@ -52,5 +54,5 @@ h3 {
 }
 
 a {
-    color: var(--secondary-color) !important;
+    color: var(--secondary-color);
 }

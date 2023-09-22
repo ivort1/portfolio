@@ -3,7 +3,6 @@ svgDownloadTemplate.innerHTML =
 `
     <style>
         #svg--download {
-            color: var(--secondary-color);
             height: 1rem;
             transition: color ease-in-out 0.2s;
             width: 1rem;

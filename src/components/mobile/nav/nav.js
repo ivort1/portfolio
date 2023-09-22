@@ -20,9 +20,6 @@ mobileNavTemplate.innerHTML =
                 <a href="/src/index.html">Home</a>
             </li>
             <li>
-                <a href="/src/pages/projects/projects.html">Projects</a>
-            </li>
-            <li>
                 <a href="/src/pages/for-recruiters/for-recruiters.html">For recruiters</a>
             </li>
             <li>
@@ -37,6 +34,48 @@ class Nav extends HTMLElement {
         super();
         this.toggleDarkMode = this.toggleDarkMode.bind(this);
         this.toggleMenu = this.toggleMenu.bind(this);
+        this.closedNavHeight = 0;
+        this.expandedNavHeight = 0;
+    }
+
+    connectedCallback() {
+        const shadow = this.attachShadow({ mode: "open" });
+        shadow.appendChild(mobileNavTemplate.content);
+
+        this.nav = this.shadowRoot.getElementById("nav");
+        this.navContent = this.shadowRoot.getElementById("nav--content");
+
+        this.closedNavHeight = 0;
+        this.expandedNavHeight = 0;
+
+        this.darkModeToggle = shadow.getElementById("nav--dark-mode-icon");
+        this.darkModeToggle.addEventListener("click", () => this.toggleDarkMode());
+
+        this.navToggle = shadow.getElementById("nav--toggle-menu");
+        this.navToggle.addEventListener("click", () => this.toggleMenu());
+
+        if(localStorage.getItem("darkModeEnabled") === "true") {
+            document.body.classList.add("dark-mode");
+            this.darkModeToggle.src="/static/svg/sun.svg";
+        } else {
+            document.body.classList.remove("dark-mode");
+            this.darkModeToggle.src="/static/svg/moon.svg";
+        }
+
+        window.setTimeout(() => {
+            this.setNavHeight();
+        }, 250);
+    }
+
+    setNavHeight() {
+        const navStyle = window.getComputedStyle(this.nav);
+        const navHeight = parseFloat(navStyle.getPropertyValue("height"));
+        this.closedNavHeight = navHeight;
+
+        const navContentStyle = window.getComputedStyle(this.navContent);
+        const navContentHeight = parseFloat(navContentStyle.getPropertyValue("height"));
+
+        this.navContent.style.padding = `${((navHeight - navContentHeight) / 2) / 16}rem 0`;
     }
       
     toggleDarkMode() {
@@ -44,12 +83,12 @@ class Nav extends HTMLElement {
         
         if (!darkModeEnabled) {
             document.body.classList.add("dark-mode");
-            this.darkModeIcon.src="/static/svg/sun.svg";
+            this.darkModeToggle.src="/static/svg/sun.svg";
             localStorage.setItem("darkModeEnabled", "true");
             document.documentElement.style.setProperty('--svg-arrow-path', '/static/svg/dark/up-arrow.svg');
         } else {
             document.body.classList.remove("dark-mode");
-            this.darkModeIcon.src="/static/svg/moon.svg";
+            this.darkModeToggle.src="/static/svg/moon.svg";
             localStorage.setItem("darkModeEnabled", "false");
             document.documentElement.style.setProperty('--svg-arrow-path', '/static/svg/light/up-arrow.svg');
         }
@@ -58,48 +97,31 @@ class Nav extends HTMLElement {
     }
 
     toggleMenu() {
-        const nav = this.shadowRoot.getElementById("nav"),
-            style = window.getComputedStyle(nav),
-            height = style.getPropertyValue("height"),
-            navToggle = this.shadowRoot.getElementById("nav--toggle-menu"),
-            navLinks = this.shadowRoot.querySelectorAll(".nav--links li");
+        const navToggle = this.shadowRoot.getElementById("nav--toggle-menu");
+        const navLinksLi = this.shadowRoot.querySelectorAll(".nav--links li");
+        const navLinks = this.shadowRoot.querySelector(".nav--links");
+        const navLinksStyle = window.getComputedStyle(navLinks);
+        const navLinksHeight = navLinksStyle.getPropertyValue("height");
+        const navLinksBottomPadding = navLinksStyle.getPropertyValue("padding-bottom");
+
+        const style = window.getComputedStyle(this.nav);
+        const height = style.getPropertyValue("height");
 
         navToggle.classList.toggle("toggle");
-        
-        if(height === "68px") {
-            nav.style.height = "20.625rem"
+
+        if(parseFloat(height) === this.closedNavHeight) {
+            this.nav.style.height = `${(this.closedNavHeight + parseFloat(navLinksHeight) + parseFloat(navLinksBottomPadding)) / 16}rem`
         } else {
-            nav.style.height = "4.25rem"
+            this.nav.style.height = `${this.closedNavHeight / 16}rem`
         }
 
-        navLinks.forEach((link, index) => {
+        navLinksLi.forEach((link, index) => {
             if (link.style.animation) {
-            link.style.animation = "";
+                link.style.animation = "";
             } else {
-            link.style.animation = `navLinkFade 0.75s ease forwards ${index / 5 + 0.25}s`;
+                link.style.animation = `navLinkFade 0.75s ease forwards ${index / 5 + 0.25}s`;
             }
         });
-    }
-
-    connectedCallback() {
-        const shadow = this.attachShadow({ mode: "open" });
-        shadow.appendChild(mobileNavTemplate.content);
-
-        this.darkModeIcon = shadow.getElementById("nav--dark-mode-icon");
-
-        const navToggle = shadow.getElementById("nav--toggle-menu");
-        navToggle.addEventListener("click", () => this.toggleMenu());
-
-        const darkModeToggle = shadow.getElementById("nav--dark-mode-icon");
-        darkModeToggle.addEventListener("click", () => this.toggleDarkMode());
-        
-        if(localStorage.getItem("darkModeEnabled") === "true") {
-            document.body.classList.add("dark-mode");
-            this.darkModeIcon.src="/static/svg/sun.svg";
-        } else {
-            document.body.classList.remove("dark-mode");
-            this.darkModeIcon.src="/static/svg/moon.svg";
-        }
     }
 }
 

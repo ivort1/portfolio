@@ -1,0 +1,81 @@
+h4, p {
+    margin: 0;
+}
+
+#card {
+    box-sizing: border-box;
+    border-radius: 5px;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 0.0625em 0.0625em, rgba(0, 0, 0, 0.25) 0px 0.125em 0.5em, rgba(255, 255, 255, 0.1) 0px 0px 0px 1px inset;    padding: 2rem;
+    min-height: 15rem;
+    width: 100%;
+
+    /* Flexbox */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+
+#card--body-links {
+    width: 100%;
+
+    /* Flexbox */
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#card--body-links a {
+    color: var(--secondary-color);
+    cursor: pointer;
+    font-size: 0.75rem;
+    text-decoration: none;
+}
+
+#card--links-demo {
+    border: solid 1px var(--secondary-color);
+    border-radius: 5px;
+    padding: 0.5rem 1rem;
+    transition: color ease-in-out 0.2s, border ease-in-out 0.2s;
+}
+
+#card--links-demo:hover {
+    border: solid 1px var(--focus-color);
+    color: var(--focus-color);
+}
+
+#card--links-github {
+    transition: color ease-in-out 0.2s, border ease-in-out 0.2s;
+
+    /* Flexbox */
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+#card--links-post {
+    transition: color ease-in-out 0.2s, border ease-in-out 0.2s;
+
+    /* Flexbox */
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+@media screen and (min-width: 768px) {
+    #card {
+        width: 22rem;
+    
+        /* Flexbox */
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: flex-start;
+    }
+}

@@ -42,24 +42,27 @@
                     with me on LinkedIn at your convenience.
                 </p>
 
-                <primary-button href="/static/pdf/Resume_Ivan_Ortiz.pdf">
-                    <svg-document></svg-document>
-                    My resume
-                </primary-button>
+                <div id="landing--paragraph-buttons">
+                    <primary-button href="/static/pdf/Resume_Ivan_Ortiz.pdf">
+                        <svg-document></svg-document>
+                        My resume
+                    </primary-button>
+    
+                    <secondary-button href="mailto:ortiz.ivan93@gmail.com">
+                        <svg-email></svg-email>
+                        Email me
+                    </secondary-button>
+    
+                    <secondary-button href="https://www.linkedin.com/in/ivanortiz93">
+                        <svg-linkedin></svg-linkedin>
+                        LinkedIn
+                    </secondary-button>
+                </div>
 
-                <secondary-button href="mailto:ortiz.ivan93@gmail.com">
-                    <svg-email></svg-email>
-                    Email me
-                </secondary-button>
-
-                <secondary-button href="https://www.linkedin.com/in/ivanortiz93">
-                    <svg-linkedin></svg-linkedin>
-                    LinkedIn
-                </secondary-button>
             </div>
 
             <div class="landing--paragraph">
-                <h3 id="landing--h1">Answers to common questions</h3>
+                <h3 id="landing--h3">Answers to common questions</h3>
                 
                 <p>
                     Below is a compilation of frequently asked questions, along with their answers, that are
@@ -108,15 +111,15 @@
                         charts and have successfully resolved deployment issues within GitHub actions when they
                         arose.
 
-                        <p>
+                        <div>
                             To effectively manage our tasks and projects, we utilize Jira as our ticket management system.
                             During our daily standup meetings, we review the Kanban board together, discussing individual
                             assigned tickets and addressing any potential blockers. Our work is organized into sprints, each
                             lasting two weeks. At the end of each sprint, we conduct a retrospective meeting to reflect on
                             what went well and identify areas for improvement.
-                        </p>
+                        </div>
 
-                        <p>
+                        <div>
                             Prior to the start of each sprint, we hold a sprint planning meeting where we collaborate to
                             create new tickets, assign tasks from the backlog, and establish our overall goals for the
                             upcoming two weeks. For seamless communication and updates, all relevant information and
@@ -124,21 +127,21 @@
                             implemented a helpful integration where creating a new branch in GitHub using a ticket number
                             automatically generates a link within the corresponding Jira ticket, which helps tremendously
                             with tracking progress and collaboration.
-                        </p>
+                        </div>
 
-                        <p>
+                        <div>
                             And finally, we maintain a dedicated Slack channel with automated notifications enabled. This
                             allows us to receive notifications whenever a build is released or if any failures occur, ensuring
                             efficient communication and swift response to any issues that may arise during the development
                             process.
-                        </p>
+                        </div>
                     </span>
                 </custom-details>
 
                 <custom-details>
                     <span slot="summary">What is your work authorization status?</span>
                     <span slot="content">
-                        I am a natural born US citizen and do not require sponsorship of any kind.
+                        I am a US citizen and do not require sponsorship of any kind.
                     </span>
                 </custom-details>
 

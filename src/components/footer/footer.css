@@ -1,14 +1,23 @@
 #footer {
     background-color: var(--footer-background-color);
-    bottom: 0;
     color: var(--footer-text-color);
     font-size: 0.75rem;
-    left: 0;
-    padding: 2rem 0;
-    position: fixed;
+    margin-top: auto;
+    min-height: 20vh;
+    padding: 5rem 0;
     transition: all ease-in-out 0.5s;
     width: 100%;
 
+    /* Flexbox */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#footer--content {
+    width: 90%;
+    
     /* Flexbox */
     display: flex;
     flex-direction: column;
@@ -18,7 +27,7 @@
 }
 
 #footer--text {
-    width: 90%;
+    width: 100%;
 }
 
 #footer--github-link {
@@ -26,7 +35,7 @@
 }
 
 #footer--links {
-    width: 90%;
+    width: 100%;
 
     display: flex;
     flex-direction: column;
@@ -40,5 +49,15 @@
 }
 
 #footer--copyright {
-    width: 90%;
+    width: 100%;
+}
+
+@media screen and (min-width: 1024px) {
+    #footer {
+        font-size: 1rem;
+    }
+
+    #footer--content {
+        width: 35%;
+    }
 }

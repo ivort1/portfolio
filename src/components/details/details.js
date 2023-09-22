@@ -10,7 +10,9 @@ detailsTemplate.innerHTML =
             <slot name="summary"></slot>
             <svg-up-arrow id="details--arrow"></svg-up-arrow>
         </div>
-        <div id="details--content"><slot name="content"></slot></div>
+        <div id="details--content">
+            <slot name="content"></slot>
+        </div>
     </div>
 `;
 
@@ -23,6 +25,7 @@ class Details extends HTMLElement {ac
     }
 
     connectedCallback() {
+        this.details = this.shadowRoot.getElementById("details");
         this.summary = this.shadowRoot.getElementById("details--summary");
         this.content = this.shadowRoot.getElementById("details--content");
         this.arrow = this.shadowRoot.getElementById("details--arrow");
@@ -31,6 +34,7 @@ class Details extends HTMLElement {ac
             this.rotateArrow();
             this.toggleContent();
             this.addFocus();
+            this.scrollToTop();
         });
 
         window.addEventListener('toggle', (e) => {
@@ -38,6 +42,10 @@ class Details extends HTMLElement {ac
                 this.summary.classList.remove("focus");
             }
         });
+    }
+
+    scrollToTop() {
+        this.details.scrollIntoView({ behavior: "smooth" });
     }
 
     rotateArrow() {
