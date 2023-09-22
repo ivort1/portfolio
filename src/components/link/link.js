@@ -4,7 +4,7 @@ linkTemplate.innerHTML =
     <link rel="stylesheet" href="/components/link/link.css">
 
     <a id="anchor">
-        <slot name="svg" id="svg"></slot>
+        <slot name="svg" id="icon"></slot>
         <slot name="text"></slot>
         <svg-right-arrow id="arrow"></svg-right-arrow>
     </a>
@@ -24,11 +24,11 @@ class Link extends HTMLElement {
         anchor.setAttribute("target", "_blank");
         anchor.setAttribute("rel", "noopener noreferrer");
 
-        const svg = this.shadowRoot.getElementById("svg");
-        svg.setAttribute("src", this.getAttribute("src"));
-        svg.setAttribute("alt", this.getAttribute("alt"));
-        svg.setAttribute("width", this.getAttribute("width"));
-        svg.setAttribute("height", this.getAttribute("height"));
+        const icon = this.shadowRoot.getElementById("icon");
+        icon.setAttribute("src", this.getAttribute("src"));
+        icon.setAttribute("alt", this.getAttribute("alt"));
+        icon.setAttribute("width", this.getAttribute("width"));
+        icon.setAttribute("height", this.getAttribute("height"));
 
         const arrow = this.shadowRoot.getElementById("arrow");
         arrow.setAttribute("width", this.getAttribute("arrowWidth"));

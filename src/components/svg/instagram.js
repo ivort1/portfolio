@@ -2,7 +2,7 @@ const svgInstagramTemplate = document.createElement("template");
 svgInstagramTemplate.innerHTML =
 `
     <style>
-        #svg--instagram {
+        #svg-instagram {
             height: 1rem;
             transition: color ease-in-out 0.2s;
             width: 1rem;
@@ -18,7 +18,7 @@ svgInstagramTemplate.innerHTML =
     <?xml version="1.0" encoding="UTF-8" standalone="no"?>
     <svg
     version="1.1"
-    id="svg--instagram"
+    id="svg-instagram"
     xml:space="preserve"
     width="682.66669"
     height="682.66669"
@@ -61,4 +61,4 @@ class SvgInstagram extends HTMLElement {
     }
 }
 
-customElements.define("svg--instagram", SvgInstagram);
+customElements.define("svg-instagram", SvgInstagram);
