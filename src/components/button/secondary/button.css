@@ -4,7 +4,7 @@
 
 a {
     border: solid 1px var(--secondary-color);
-    border-radius: 5px;
+    /* border-radius: 5px; */
     box-sizing: border-box;
     color: var(--secondary-color);
     height: 3rem;

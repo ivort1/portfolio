@@ -4,7 +4,7 @@
 
 #details {
     border: solid 1px var(--secondary-color);
-    border-radius: 5px;
+    /* border-radius: 5px; */
 
     /* Flexbox */
     display: flex;
