@@ -1,9 +1,7 @@
 const mobileNavTemplate = document.createElement("template");
 mobileNavTemplate.innerHTML = 
 `
-    <style>
-        <link rel="stylesheet" href="/src/components/mobile/nav/nav.css">
-    </style>
+    <link rel="stylesheet" href="/src/components/mobile/nav/nav.css">
 
     <nav id="nav">
         <div id="nav--content">
