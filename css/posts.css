@@ -1,0 +1,27 @@
+p {
+    line-height: 2rem;
+    margin: 1rem 0;
+}
+
+pre {
+    background-color: var(--nav-dark-mode-toggle-color);
+    padding: 1rem;
+}
+
+#main {
+    margin: 5rem auto;
+    min-height: 80vh;
+    width: 90%;
+
+    /* Flexbox */
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+
+@media screen and (min-width: 1024px) {
+    #main {
+        width: 35%;
+    }
+}

@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/ivort1/portfolio/issues"
   },
-  "homepage": "https://github.com/ivort1/portfolio#readme"
+  "homepage": "https://github.com/ivort1/portfolio#readme",
+  "dependencies": {
+    "marked": "^9.0.3"
+  }
 }

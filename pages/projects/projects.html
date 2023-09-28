@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Ivan Ortiz | Software Engineer</title>
+        
+        <!-- JavaScript -->
+        <script>
+            localStorage.setItem("darkModeEnabled", "true");
+        </script>
+        <script defer src="/components/nav/nav.js"></script>
+        <script defer src="/components/button/primary/button.js"></script>
+        <script defer src="/components/button/secondary/button.js"></script>
+        <script defer src="/components/link/link.js"></script>
+        <script defer src="/components/footer/footer.js"></script>
+        <script defer src="/components/svg/linkedin.js"></script>
+        <script defer src="/components/svg/github.js"></script>
+        <script defer src="/components/svg/instagram.js"></script>
+        <script defer src="/components/svg/right-arrow.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+        <script src="/components/blog-post/post.js"></script>
+        
+        <!-- Google Fonts -->
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <style>@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');</style>
+        
+        <!-- CSS -->
+        <link rel="stylesheet" href="/css/preflight.css">
+        <link rel="stylesheet" href="/css/globals.css">
+        <link rel="stylesheet" href="./projects.css">
+    </head>
+    <body>
+        <mobile-nav></mobile-nav>
+
+        <main id="main">
+            <blog-post file_name="make-the-nfl-great-again"></blog-post>
+        </main>
+
+        <custom-footer></custom-footer>
+    </body>
+</html>

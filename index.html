@@ -9,31 +9,35 @@
         <script>
             localStorage.setItem("darkModeEnabled", "true");
         </script>
-        <script defer src="./components/mobile/nav/nav.js"></script>
-        <script defer src="./components/button/primary/button.js"></script>
-        <script defer src="./components/button/secondary/button.js"></script>
-        <script defer src="./components/card/card.js"></script>
-        <script defer src="./components/link/link.js"></script>
-        <script defer src="./components/footer/footer.js"></script>
-        <script defer src="./components/svg/document.js"></script>
-        <script defer src="./components/svg/email.js"></script>
-        <script defer src="./components/svg/linkedin.js"></script>
-        <script defer src="./components/svg/github.js"></script>
-        <script defer src="./components/svg/instagram.js"></script>
-        <script defer src="./components/svg/right-arrow.js"></script>
+        <script defer src="/components/nav/nav.js"></script>
+        <script defer src="/components/button/primary/button.js"></script>
+        <script defer src="/components/button/secondary/button.js"></script>
+        <script defer src="/components/card/card.js"></script>
+        <script defer src="/components/link/link.js"></script>
+        <script defer src="/components/footer/footer.js"></script>
+        <script defer src="/components/svg/document.js"></script>
+        <script defer src="/components/svg/email.js"></script>
+        <script defer src="/components/svg/linkedin.js"></script>
+        <script defer src="/components/svg/github.js"></script>
+        <script defer src="/components/svg/instagram.js"></script>
+        <script defer src="/components/svg/right-arrow.js"></script>
+        <script src="/components/button/button.js"></script>
 
         <!-- Google Fonts -->
         <link rel="preconnect" href="https://fonts.gstatic.com">
         <style>@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');</style>
         
         <!-- CSS -->
-        <link rel="preload" href="./preflight.css" as="style" onload="this.rel='stylesheet'">
-        <link rel="preload" href="./globals.css" as="style" onload="this.rel='stylesheet'">
-        <link rel="preload" href="./index.css" as="style" onload="this.rel='stylesheet'">
-
+        <link rel="stylesheet" href="/css/preflight.css">
+        <link rel="stylesheet" href="/css/globals.css">
+        <link rel="stylesheet" href="/css/index.css">
     </head>
     <body>
         <mobile-nav></mobile-nav>
+
+        <primary-btn>
+            <span slot="text">TEST!!!!</span>
+        </primary-btn>
 
         <main id="main">
             <section id="landing">
