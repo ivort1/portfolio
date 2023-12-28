@@ -18,7 +18,7 @@
     "url": "https://github.com/ivort1/portfolio/issues"
   },
   "homepage": "https://github.com/ivort1/portfolio#readme",
-  "devDependencies": {
+  "dependencies": {
     "@11ty/eleventy": "^2.0.1"
   }
 }
