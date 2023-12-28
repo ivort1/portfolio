@@ -4,6 +4,8 @@
   "description": "My personal website.",
   "main": "index.js",
   "scripts": {
+    "prebuild": "rimraf _site",
+    "build": "eleventy",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -15,5 +17,8 @@
   "bugs": {
     "url": "https://github.com/ivort1/portfolio/issues"
   },
-  "homepage": "https://github.com/ivort1/portfolio#readme"
+  "homepage": "https://github.com/ivort1/portfolio#readme",
+  "devDependencies": {
+    "@11ty/eleventy": "^2.0.1"
+  }
 }

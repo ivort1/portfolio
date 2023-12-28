@@ -1,11 +1,5 @@
 
-#### 🖥️ **My personal website that displays my resume, contact information, projects, etc. This static site is basic and uses plain JavaScript, HTML, and CSS with no framworks or libraries.** 
-
-- Roboto-mono font provided by [Google Fonts](https://fonts.google.com/)
-- Icons provided by [Font Awesome](https://fontawesome.com/)
-- Code stored on GitHub (obviously) and hosted on [Netlify](https://www.netlify.com/)
-- The image on my About Me page was taken by [Andras Vas](https://unsplash.com/@wasdrew?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText)
-
+#### 🖥️ **My personal website that displays my resume, blog, contact information, projects, etc. This static site is basic and uses plain JavaScript, HTML, and CSS with no framworks or libraries aside from 11ty for the blogging platform.** 
 
 <br>
 
@@ -25,5 +19,4 @@
 
 ***
 
-- Light/dark mode does not toggle properly for the nav bar on mobile view
-- Local storage is not working properly for light/dark mode. The user's prefence is not being saved when the page is refreshed or revisited.
+- None as of now
