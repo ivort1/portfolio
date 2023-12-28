@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Ivan Ortiz | Software Engineer</title>
+        
+
+        <!-- Google Fonts -->
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <style>
+            @import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&display=swap');
+        </style>
+        
+        <!-- CSS -->
+        <link rel="preload" href="/css/preflight.css" as="style" onload="this.rel='stylesheet'">
+        <link rel="preload" href="/css/globals.css" as="style" onload="this.rel='stylesheet'">
+        <link rel="preload" href="/css/index.css" as="style" onload="this.rel='stylesheet'">
+        <link rel="preload" href="/css/layout.css" as="style" onload="this.rel='stylesheet'">
+
+        <!-- JavaScript -->
+        <script defer src="/components/svg/linkedin.js"></script>
+        <script defer src="/components/svg/envelope.js"></script>
+        <script defer src="/components/svg/github.js"></script>
+
+
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/styles/default.min.css">
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/highlight.min.js"></script>
+    </head>
+    <body>
+        <main id="main">
+            <a href="/" id="back-button">
+                <span>&#10094;</span>
+                <span>Home</span>
+            </a>
+
+            <section id="blog">
+                <h2 id="blog--title">{{ title }}</h2>
+                <h5 id="blog--date">By {{ author }} / {{ page.date | postDate }}</h5>
+                <p id="blog--content">
+                    {{ content }}
+                </p>
+            </section>
+
+            <div id="copyright"></div>
+        </main>
+
+        <script>
+            const date = new Date()
+            document.getElementById("copyright").textContent = `© ${date.getFullYear()} Ivan Ortiz`;
+        </script>
+
+        <script>hljs.highlightAll();</script>
+    </body>
+</html>

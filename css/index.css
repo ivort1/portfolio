@@ -1,0 +1,109 @@
+#main {
+    margin: 10rem auto 5rem auto;
+    padding: 0 1rem;
+    width: 100%;
+    max-width: 60vh;
+
+    /* Flexbox */
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 8rem;
+}
+
+#main--landing {
+    /* Flexbox */
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 2rem;
+}
+
+#main--name {
+    font-size: 4rem;
+    line-height: 1;
+    width: 100%;
+}
+
+#main--links {
+    width: 100%;
+
+    /* Flexbox */
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 2rem;
+}
+
+.link {
+    background-color: var(--secondary-color);
+    border-radius: 9999px;
+    padding: 1rem;
+    transition: background-color 0.25s ease-in-out;
+}
+
+.link:hover {
+    background-color: var(--secondary-color-hover);
+}
+
+.link {
+    color: var(--body-color);
+}
+
+/* Blog */
+#blog {
+    width: 100%;
+
+    /* Flexbox */
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 2rem;
+}
+
+#blog--post {
+    background-color: var(--secondary-color);
+    border-radius: 5px;
+    color: var(--body-color);
+    padding: 2rem;
+    transition: background-color ease-in-out 0.25s;
+    width: 100%;
+}
+
+#blog--post:hover {
+    background-color: var(--secondary-color-hover);
+    cursor: pointer;
+}
+
+#blog--post-date {
+    color: #cccccc;
+}
+
+/* For recruiters */
+#for-recruiters {
+    /* Flexbox */
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 2rem;
+}
+
+#for-recruiters--faq {
+    border: solid 2px var(--secondary-color);
+    border-radius: 5px;
+
+    /* Flexbox */
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+#for-recruiters--faq custom-details:not(:last-child) {
+    border-bottom: solid 2px var(--secondary-color);
+}
