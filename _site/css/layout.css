@@ -27,8 +27,11 @@ a {
 }
 
 pre {
-    border-radius: 5px;
     width: 100%;
+}
+
+code { 
+    border-radius: 5px;
 }
 
 #back-button {
