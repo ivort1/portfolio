@@ -1,5 +1,5 @@
 ---
-title: "New Year's Resolution for 2024: Breaking into FAANG"
+title: "New Year's Resolution for 2024: Break into FAANG"
 author: "Ivan Ortiz"
 date: 2023-12-23
 ---

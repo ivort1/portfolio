@@ -32,7 +32,7 @@
 }
 
 #details--summary.focus {
-    background-color: var(--secondary-color);
+    background-color: var(--secondary-color-hover);
     color: var(--heading-color);
 }
 

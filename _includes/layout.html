@@ -36,7 +36,10 @@
 
             <section id="blog">
                 <h2 id="blog--title">{{ title }}</h2>
-                <h5 id="blog--date">By {{ author }} / {{ page.date | postDate }}</h5>
+                <div>
+                    <h5>By {{ author }}</h5>
+                    <h5 id="blog--date">{{ page.date | postDate }}</h5>
+                </div>
                 <p id="blog--content">
                     {{ content }}
                 </p>

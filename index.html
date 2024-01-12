@@ -58,10 +58,12 @@
             <section id="blog">
                 <h1>Blog</h1>
 
-                {% for post in collections.post %}
+                {% assign postCount = 4 %}
+                {% assign postList = collections.posts | reverse %}
+                {% for post in postList limit:postCount %}
                 <a href="{{ post.url | url }}" id="blog--post">
                     <div>{{ post.data.title }}</div>
-                    <div id="blog--post-date">{{ post.data.date | postDate }}</div>
+                    <time id="blog--post-date">{{ post.date | postDate }}</time>
                 </a>
                 {% endfor %}
             </section>
