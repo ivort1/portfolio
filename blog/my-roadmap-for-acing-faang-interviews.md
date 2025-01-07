@@ -1,7 +1,7 @@
 ---
 title: "My Roadmap for Acing FAANG Interviews"
 author: "Ivan Ortiz"
-date: 2024-01-11
+date: 2025-01-06
 ---
 ![Road](https://images.unsplash.com/photo-1557159557-7a93eaadf72a?q=80&w=2671&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D
 )
@@ -22,4 +22,4 @@ Outlined below is my general roadmap for interview preparation, with more detail
 
 6. **Construct a Solid Resume** – <a href="https://www.reddit.com/r/jobs/comments/7y8k6p/im_an_exrecruiter_for_some_of_the_top_companies/" target="_blank" rel="noopener noreferrer">This template found on Reddit</a> has proven successful over the past two years, yielding interviews with companies such as Disney, CrowdStrike, Attentive, and more. <a href="https://careerservices.fas.harvard.edu/resources/harvard-college-guide-to-resumes-cover-letters" target="_blank" rel="noopener noreferrer">Harvard University</a> also recommends this format so one could say its merit has been proven. This template will continue to be utilized.
 
-7. **Apply** – Referrals will likely be necessary for all FAANG companies, possibly excluding Amazon. This will depend on the hiring landscape in 2024.
+7. **Apply** – Referrals will likely be necessary for all FAANG companies, possibly excluding Amazon. This will depend on the hiring landscape in 2025.

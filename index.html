@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
+        <meta name="Ivan Ortiz's Portfolio" content="Personal portfolio of Ivan Ortiz that includes his blog, projects, resume, and relevant links.">
         <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Ivan Ortiz | Software Engineer</title>
@@ -25,6 +26,7 @@
         <script defer src="./components/svg/up-arrow.js"></script>
 
         <script src="./components/details/details.js"></script>
+        <script src="./components/imgLink/imgLink.js"></script>
     </head>
     <body>
         <main id="main">
@@ -35,11 +37,10 @@
                     Experienced JavaScript/React and Java developer specializing in crafting elegant digital experiences to enhance efficiency and productivity.
                 </p>
     
-                <div id="main--links">    
+                <div id="main--links">
                     <a href="https://docs.google.com/document/d/1Qa66sZFPQrt3wwJg2QvKldxs99QFurU0iqEaLFMrylA/edit?usp=sharing" target="_blank" rel="noopener noreferrer" class="link">
                         <svg-cv>
                     </a>
-                    
                     
                     <a href="mailto:ortiz.ivan93@gmail.com" target="_blank" rel="noopener noreferrer" class="link">
                         <svg-envelope>
@@ -62,8 +63,9 @@
                 {% assign postList = collections.posts | reverse %}
                 {% for post in postList limit:postCount %}
                 <a href="{{ post.url | url }}" id="blog--post">
-                    <div>{{ post.data.title }}</div>
                     <time id="blog--post-date">{{ post.date | postDate }}</time>
+                    <div id="blog--post-title">{{ post.data.title }}</div>
+                    <div id="blog--post-arrow">→</div>
                 </a>
                 {% endfor %}
             </section>
@@ -99,7 +101,7 @@
                     <custom-details>
                         <span slot="summary">What is your work authorization status?</span>
                         <span slot="content">
-                            I am a US citizen and do not require sponsorship of any kind, now or in the future.
+                            As a US citizen I do not require sponsorship of any kind, now or in the future.
                         </span>
                     </custom-details>
 
@@ -115,12 +117,12 @@
                     <custom-details>
                         <span slot="summary">On-site, hybrid, or remote?</span>
                         <span slot="content">
-                            Remote would be my preferred option as I am accustomed to collaborating and operating in a digital environment. At my last position, despite residing on
+                            Remote would be my preferred option as I am accustomed to collaborating and operating in a digital environment. At one of my last positions, despite residing on
                             the west coast, my work schedule was aligned with the eastern time zone, and was typically online
                             from 6:30am to 2:30pm PST. Essentially, I am highly adaptable when it comes to my working
                             hours and can adjust them to accommodate the team's needs. I am also open to occasional
                             travel for significant meetings and milestones. Both on-site and hybrid work arrangements are acceptable as well, however, my
-                            commute should not exceed one and a half hours in each direction.
+                            commute should not exceed one hour in each direction.
                         </span>
                     </custom-details>
 
@@ -136,35 +138,9 @@
                     <custom-details>
                         <span slot="summary">Are you willing to relocate?</span>
                         <span slot="content">
-                            Provided that a relocation package is included, my top cities would be:
-                            <ul>
-                                <li>San Diego, CA</li>
-                                <li>San Francisco, CA</li>
-                                <li>Austin, TX</li>
-                                <li>Dallas, TX</li>
-                            </ul>
-    
-                            I would not be open to relocating to the following locations:
-                            <ul>
-                                <li>Portland, OR</li>
-                                <li>New York, NY</li>
-                            </ul>
+                            Relocating would not be an option at this point in time.
                         </span>
                     </custom-details>
-    
-                    <!-- <custom-details>
-                        <span slot="summary">What are your salary expectations?</span>
-                        <span slot="content">
-                            My target base salary is $130,000 - $200,000, which is based on my experience, the current figures I’m seeing for software
-                            engineers in the Los Angeles area, insights gathered from recruiters and colleagues, and the
-                            high cost of living in Southern California. However, I am flexible regarding this figure, particularly
-                            if the compensation package includes stock options and an annual bonus. While I value fair
-                            compensation, my priority is joining a great company with an exceptional team and engaging
-                            projects that allow me to expand my knowledge base. I am more than willing to have a
-                            constructive discussion about my salary, as I don’t want it to be the determining factor in
-                            considering my suitability for a role.
-                        </span>
-                    </custom-details> -->
                 </div>
             </section>
 

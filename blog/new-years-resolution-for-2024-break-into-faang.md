@@ -1,7 +1,7 @@
 ---
-title: "New Year's Resolution for 2024: Break into FAANG"
+title: "New Year's Resolution for 2025: Break into FAANG"
 author: "Ivan Ortiz"
-date: 2023-12-23
+date: 2024-12-23
 ---
 
 ![FAANG](https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fwww.thestreet.com%2F.image%2Ft_share%2FMTgxNzI1NDIxMzEyNjgxNTc5%2Ffaanglogos_1200px.jpg&f=1&nofb=1&ipt=124a25bcc2a2521a1b908cd67825fcfe70e5f33fe40f5eadce6f72ab7c3a3f1f&ipo=images)
@@ -12,4 +12,4 @@ However, the path to these coveted roles is not easy. Software engineers arguabl
 
 Despite the challenging interview process, the compensation can be life-altering. It’s not uncommon for new graduates to earn over $200,000 at Meta, Google, Apple, and Amazon. Netflix is unique in that it compensates its employees in all cash instead of offering stock options. Websites like <a href="https://www.levels.fyi/?compare=Google,Northrop%20Grumman,Disney&track=Software%20Engineer" target="_blank" rel="noopener noreferrer">Levels.fyi</a> and <a href="https://www.teamblind.com/" target="_blank" rel="noopener noreferrer">Blind</a> provide a glimpse into the earning potential in this lucrative field. Based on data from Levels.fyi, half of all senior engineers earn an annual total compensation of $324,000. Meanwhile, staff engineers and principal engineers earn yearly total compensations of $482,000 and $601,000 respectively.
 
-This blog was created to document the journey towards achieving the goal of receiving an offer from one of these companies in 2024. There’s also an intention to start a YouTube channel but uploading videos on a regular basis might be challenging. For now, this blog will serve as the primary platform for sharing this journey.  
+This blog was created to document the journey towards achieving the goal of receiving an offer from one of these companies in 2025. There’s also an intention to start a YouTube channel but uploading videos on a regular basis might be challenging. For now, this blog will serve as the primary platform for sharing this journey.  
