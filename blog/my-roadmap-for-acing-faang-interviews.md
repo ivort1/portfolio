@@ -10,7 +10,7 @@ Navigating the labyrinth of resources, both free and paid, that promise the secr
 
 Outlined below is my general roadmap for interview preparation, with more detailed and comprehensive blog posts on each topic to follow:
 
-1. **Choose a Programming Language** – The language of choice should ideally be one that is most familiar. For those starting from scratch or without a strong grasp on any particular language, Python is the de-facto choice for interviews, followed by Java, C++, and JavaScript (the latter specifically for front-end roles). Python is my chosen language for this interview preparation journey.
+1. **Choose a Programming Language** – The language of choice should ideally be one that is most familiar. For those starting from scratch or without a strong grasp on any particular language, Python is the de-facto choice for interviews, followed by Java, C++, and JavaScript (the latter specifically for front-end roles). Because I plan to also apply to front-end roles, JavaScript/TypeScript is my chosen language for this interview preparation journey.
 
 2. **Learn Data Structures and Algorithms** – This was without a doubt the most grueling and challenging task when assembling my roadmap. There are just *so* many books, MOOCs, YouTube channels...it's just...a lot. The final selection included <a href="https://www.amazon.com/Grokking-Algorithms-illustrated-programmers-curious/dp/1617292230" target="_blank" rel="noopener noreferrer">Grokking Algorithms</a>, <a href="https://www.structy.net" target="_blank" rel="noopener noreferrer">Structy</a>, and YouTube for additional clarification as needed.
 
